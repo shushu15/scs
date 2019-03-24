@@ -268,19 +268,22 @@ section {
 	background: url(../images/slider/building_.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
 }  
 #home-slider .slide2 {
-	background: url(../images/slider/building_.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
+	background: url(../images/slider/yellow.gif) center no-repeat, url(../images/slider/building.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
 }  
 #home-slider .slide3 {
-	background: url(../images/slider/building_.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
+	background: url(../images/slider/green.gif) center no-repeat, url(../images/slider/building.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
 }  
 #home-slider .slide4 {
-	background: url(../images/slider/building_.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
+	background: url(../images/slider/red.gif) center no-repeat, url(../images/slider/building.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
 }  
 #home-slider .slide5 {
-	background: url(../images/slider/building_.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
+	background: url(../images/slider/white.gif) center no-repeat, url(../images/slider/building.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
 }  
 #home-slider .slide6 {
-	background: url(../images/slider/building_.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
+	background: url(../images/slider/biruz.gif) center no-repeat, url(../images/slider/building.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
+}  
+#home-slider .slide7 {
+	background: url(../images/slider/blue.gif) center no-repeat, url(../images/slider/building.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
 }
  
 .caption .btn-start {
@@ -303,7 +306,7 @@ section {
   transition-property: opacity; 
   background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
+  height: 283px;
 
 }
 

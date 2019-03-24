@@ -67,6 +67,7 @@
 			<li data-target="#home-slider" data-slide-to="4"></li>
 			<li data-target="#home-slider" data-slide-to="5"></li>
 			<li data-target="#home-slider" data-slide-to="6"></li>
+			<li data-target="#home-slider" data-slide-to="7"></li>
 		</ol>
         <div class="item active slide1" >
           <div class="caption">
@@ -80,25 +81,31 @@
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services" data-animation-wipe="btn btn-start animated fadeOut">а как это работает?</a>
           </div>
         </div>
-        <div class="item slide3" >
+        <div class="item slide3">
+          <div class="caption">
+            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы безопасности</span></h1>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services" data-animation-wipe="btn btn-start animated fadeOut">а как это работает?</a>
+          </div>
+        </div>
+        <div class="item slide4" >
           <div class="caption">
             <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы противопожарной защиты</span></h1>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
-        <div class="item slide4" >
+        <div class="item slide5" >
           <div class="caption">
             <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Телекоммуникационные системы</span></h1>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
-        <div class="item slide5" >
+        <div class="item slide6" >
           <div class="caption">
             <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Автоматика и диспетчеризация</span></h1>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
-        <div class="item slide6" >
+        <div class="item slide7" >
           <div class="caption">
             <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы отопления и водоснабжения</span></h1>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
