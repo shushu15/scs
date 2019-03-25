@@ -8,12 +8,22 @@ a,
 #footer .footer-bottom a,
 .breadcrumb a
 {
-  color: #0e9ac8;
+  color: #5e9ab2;
 }
 
-strong {
+strong,  {
 	color: #FF880A;	
 }
+
+.main-nav, .navbar-right li.active a,
+#about-us .lead {
+		border-color: #F7551D;
+}
+
+#news {
+  background-color: #BCD5E1;
+}
+
 
 
 .btn.btn-primary:hover,
@@ -21,18 +31,18 @@ strong {
 .dropdown-menu  > li > a:hover ,
 .our-services .col-sm-6:hover .service-icon 
 {
-  background-color: #0c7ba0;
+  background-color: #3D80A4;
 }
-
+#5998af
 a:hover, a:focus  {
-	color: #0c7ba0;
+	color: #3D80A4;
 }
 .header_top  {
-  border-color: #0c7ba0;
+  border-color: #3D80A4;
 }
   
 .about-info {
-  border-color:  #0e9ac8;/*rgba(13,179,199, .2);*/
+  border-color:  #5e9ab2;/*rgba(13,179,199, .2);*/
 } 
 
 
@@ -56,25 +66,25 @@ a:hover, a:focus  {
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover,
 .member-info h3, #faq-content h3
 {
-  background-color:#0e9ac8;
+  background-color:#5e9ab2;
 }
 
 
 .twitter-left-control:hover, 
 .twitter-right-control:hover, 
 .btn-loadmore:hover  {
-	border: 1px solid #0e9ac8;
+	border: 1px solid #5e9ab2;
 }
 
 .caption .btn-start:hover, 
 .left-control:hover, 
 .right-control:hover {
-	border-color: #0e9ac8;
+	border-color: #5e9ab2;
 }
 
 
 .twitter-icon .fa-twitter:after {
-	border-color: #0e9ac8 transparent transparent;
+	border-color: #5e9ab2 transparent transparent;
 }
 
 #twitter h4 a, #twitter .item a {

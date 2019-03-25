@@ -9,7 +9,7 @@
   <meta name="author" content="СКС">
   <link href="<?php echo site_url();?>themes/my/assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="<?php echo site_url();?>themes/my/assets/css/animate.min.css" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="<?php echo site_url();?>themes/my/assets/css/lightbox.css" rel="stylesheet">
   <link href="<?php echo site_url();?>themes/my/assets/css/main.css" rel="stylesheet">
   <link href="<?php echo site_url();?>themes/my/assets/css/blog.css" rel="stylesheet">
@@ -70,44 +70,64 @@
 			<li data-target="#home-slider" data-slide-to="7"></li>
 		</ol>
         <div class="item active slide1" >
+          <div class="picture">
+		  </div>
           <div class="caption">
-            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Технологии комфорта и безопасности</h1>
+            <h1 class="animated bounceIn" data-animation-wipe="animated bounceOut">Инженерные системы</h1>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#about-us" data-animation-wipe="btn btn-start animated fadeOut">посмотреть</a>
           </div>
         </div>
         <div class="item slide2">
+          <div class="picture">
+			<img src="<?php echo site_url();?>themes/my/assets/images/slider/yellow.gif">
+		  </div>
           <div class="caption">
-            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Электроснабжение и <span>системы безопасности</span></h1>
+            <h2 class="animated bounceIn" data-animation-wipe="animated bounceOut">Электроснабжение</span></h2>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services" data-animation-wipe="btn btn-start animated fadeOut">а как это работает?</a>
           </div>
         </div>
         <div class="item slide3">
+          <div class="picture">
+			<img src="<?php echo site_url();?>themes/my/assets/images/slider/green.gif">
+		  </div>
           <div class="caption">
-            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы безопасности</span></h1>
+            <h2 class="animated bounceIn" data-animation-wipe="animated bounceOut">Системы безопасности</span></h2>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services" data-animation-wipe="btn btn-start animated fadeOut">а как это работает?</a>
           </div>
         </div>
         <div class="item slide4" >
+          <div class="picture">
+			<img src="<?php echo site_url();?>themes/my/assets/images/slider/red.gif">
+		  </div>
           <div class="caption">
-            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы противопожарной защиты</span></h1>
+            <h2 class="animated bounceInDown" data-animation-wipe="animated bounceOutDown">Системы противопожарной защиты</span></h2>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide5" >
+          <div class="picture">
+			<img src="<?php echo site_url();?>themes/my/assets/images/slider/white.gif">
+		  </div>
           <div class="caption">
-            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Телекоммуникационные системы</span></h1>
+            <h2 class="animated bounceInDown" data-animation-wipe="animated bounceOutDown">Телекоммуникации</span></h2>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide6" >
+          <div class="picture">
+			<img src="<?php echo site_url();?>themes/my/assets/images/slider/biruz.gif">
+		  </div>
           <div class="caption">
-            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Автоматика и диспетчеризация</span></h1>
+            <h2 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Автоматика и диспетчеризация</span></h2>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide7" >
+          <div class="picture">
+			<img src="<?php echo site_url();?>themes/my/assets/images/slider/blue.gif">
+		  </div>
           <div class="caption">
-            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы отопления и водоснабжения</span></h1>
+            <h2 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы отопления и водоснабжения</span></h2>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
@@ -130,12 +150,16 @@
           </button>
           <a class="navbar-brand" href="/">
 			<div class="col-xs-x hidden-sm hidden-md hidden-lg">
-				<img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/goodnite-logo-dark-44.png" style="border-radius: 5px;" alt="logo">
+				<img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/logo_scs_44.gif" style="border-radius: 5px;" alt="logo">
 			</div>
 			<div class="hidden-xs col-sm-x col-md-x col-lg-x">
-				<img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/goodnite-logo-dark-140.png" style="border-radius: 5px;" alt="logo">
+				<img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/logo_scs_61.gif" style="border-radius: 5px;" alt="logo">
 			</div>
           </a>                    
+          <div class="navbar-brand">
+		  <i class="fas fa-phone"></i> <?php echo config('site.phone');?>
+          </div>
+		  
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
@@ -163,82 +187,119 @@
     </div><!--/#main-nav-->
   </header> <!--/#home-->
   
-   <section id="about-us" class="parallax">
-    <div class="container">
+  <!-- main layout -->
+   <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-7">
-          <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2>О компании</h2>
+		<!-- right column -->
+		<div class="col-md-3 col-md-push-9">
+			<div id="news">
+			<div class="row">
+				<div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+					<h2>Новости</h2>
+				</div>
+			</div>
+			<div class="blog-posts">
+			<div class="row">
+				<?php $lists = recent_posts(true, 3);?>
+				<?php foreach ($lists as $l):?>
+					<div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+						<div class="post-thumb">
+							<a href="<?php echo $l->url;?>"><img class="img-responsive" src="<?php echo get_image($l);?>" alt="<?php echo shorten($l->title,80);?>"></a> 
+							<div class="post-meta">
+								<span><i class="fas fa-eye"></i> Просмотров <?php echo $l->views;?> </span>
+								<span><i class="fas fa-comments-o"></i> Комментариев 0 </span> 
+							</div>
+							<div class="post-icon">
+							<?php if (!empty($l->video)) { ?>
+								<i class="fas fa-video"></i>
+							<?php } else { ?>	
+								<i class="fas fa-pencil-alt"></i>
+							<?php } ?>
+							</div>
+						</div>
+						<div class="entry-header">
+							<h3><a href="<?php echo $l->url;?>"><?php echo shorten($l->title,120);?></a></h3>
+							<span class="date"><?php echo date('d M Y', $l->date);?></span>
+							<span class="cetagory">в <strong><?php echo $l->category;?></strong></span>
+						</div>
+						<div class="entry-content">
+							<p><?php echo shorten($l->body, 200); ?>...</p>
+						</div>
+					</div>
+				<?php endforeach;?>
+				</div>
+				<div class="load-more wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<a href="/blog" class="btn-loadmore"><i class="fas fa-repeat"></i> Все новости</a>
+				</div>                
+			</div>
+			</div>
+			<!--/#news-->
+		</div>
+		<!-- end right column -->
+		<!-- left column -->
+		<div class="col-md-9 col-md-pull-3">
+			<div id="about-us">
+			<div class="row">
+				<div class="col-sm-7">
+				<div class="about-info heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+					<h2>О компании</h2>
 			
-			<p><strong>СКС</strong> — одна из ведущих проектно-монтажных организаций, работающая в сфере инженерных систем в Санкт-Петербурге.
+					<p><strong>СКС</strong> — одна из ведущих проектно-монтажных организаций, работающая в сфере инженерных систем в Санкт-Петербурге.
 			
-			</p><p>
-			Компания специализируется на обеспечении производственных, общественных и жилых зданий полным комплексом инженерных систем: от слаботочных сетей до электроснабжения. 
-			«СКС» выполняет весь цикл работ, начиная от обследования и проектирования до сдачи строительно-монтажных работ и осуществления гарантийного обслуживания. 
-			Компания имеет возможность выбирать поставщиков оборудования и, тем самым, оптимизировать выбираемые технические решения. 
-			На некоторых объектах организация выступает в роли генерального проектировщика и генерального подрядчика по всем инженерным системам здания. 
+					</p><p>
+					Компания специализируется на обеспечении производственных, общественных и жилых зданий полным комплексом инженерных систем: от слаботочных сетей до электроснабжения. 
+					«СКС» выполняет весь цикл работ, начиная от обследования и проектирования до сдачи строительно-монтажных работ и осуществления гарантийного обслуживания. 
+					Компания имеет возможность выбирать поставщиков оборудования и, тем самым, оптимизировать выбираемые технические решения. 
+					На некоторых объектах организация выступает в роли генерального проектировщика и генерального подрядчика по всем инженерным системам здания. 
 			
-			</p><p>
-			«СКС» ориентируется на средних и крупных Заказчиков. За более чем десятилетнюю историю компании, были реализованы проекты для автоконцерна Nissan, сети отелей Holiday Inn, Александрийского театра, 
-			компании «Даринда» (гипермаркеты «О'Кей»), стройкорпорации «Элис» (ТК «Владимирский пассаж», жилые комплексы) и многих других. 
+					</p><p>
+					«СКС» ориентируется на средних и крупных Заказчиков. За более чем десятилетнюю историю компании, были реализованы проекты для автоконцерна Nissan, сети отелей Holiday Inn, Александрийского театра, 
+					компании «Даринда» (гипермаркеты «О'Кей»), стройкорпорации «Элис» (ТК «Владимирский пассаж», жилые комплексы) и многих других. 
 
-			</p><p>
-			Компания «СКС» объединила команду высококвалифицированных специалистов, способных выполнить основную часть работ своими силами, без привлечения субподрядных организаций. 
-			Главные ценности деятельности организации: профессионализм сотрудников и высокое качество предоставляемых услуг. 			
-			</p>
+					</p><p>
+					Компания «СКС» объединила команду высококвалифицированных специалистов, способных выполнить основную часть работ своими силами, без привлечения субподрядных организаций. 
+					Главные ценности деятельности организации: профессионализм сотрудников и высокое качество предоставляемых услуг. 			
+					</p>
 		
-          </div>
-        </div>
-        <div class="col-sm-5">
-          <div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2>Специализация</h2>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <p class="lead">Электроснабжение.</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="67"></div>
-              </div>
-            </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
-              <p class="lead">Системы безопасности.</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="100"></div>
-              </div>
-            </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
-              <p class="lead">Системы противопожарной защиты.</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="100"></div>
-              </div>
-            </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-              <p class="lead">Телекоммуникационные системы.</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="100"></div>
-              </div>
-            </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
-              <p class="lead">Автоматика и диспетчеризация</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="100"></div>
-              </div>
-            </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
-              <p class="lead">Системы отопления и водоснабжения.</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="100"></div>
-              </div>
-            </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-              <p class="lead">Производство электрощитового оборудования.</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- row - about -->
-    </div>
-  </section> <!--/#about-us-->
+				</div>
+				</div>
+				<div class="col-sm-5">
+				<div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+					<h2>Специализация</h2>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-bolt"></i> Электроснабжение.</p>
+					</div>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-video"></i> Системы безопасности.</p>
+					</div>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-fire-alt"></i> Системы противопожарной защиты.</p>
+					</div>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-network-wired"></i> Телекоммуникационные системы.</p>
+					</div>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-magic"></i> Автоматика и диспетчеризация</p>
+					</div>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-temperature-high"></i> Системы отопления и водоснабжения.</p>
+					</div>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-plug"></i> Производство электрощитового оборудования.</p>
+					</div>
+				</div>
+				</div>
+			</div> <!-- row - about -->
+			</div>
+		<!--/#about-us-->
+		</div>
+		<!-- end left column -->
+	  </div>
+   </div> 	  
+  <!-- end main layout -->
+  
+
+  
  
   <section id="services">
     <div class="container">
@@ -362,188 +423,48 @@
    </div>
 </section> <!-- advantage -->
 
-
+ 
   <section id="portfolio">
     <div class="container">
       <div class="row">
         <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <h2>Подробнее о goodnite и ее использовании</h2>
+          <h2>Наши последние проекты</h2>
           </div>
       </div> 
     </div>
     <div class="container-fluid">
        <div class="row">   <!-- row 1-->
-        <div class="col-sm-3 col-xs-6">
+		 <?php $lists = recent_posts(true, 3);?>
+		 <?php foreach ($lists as $l):?>
+	   
+		 <div class="col-sm-3 col-xs-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+		
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="folio-image">
-              <img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/portfolio/message-to.jpg" alt="К нашим покупателям">
+					<img class="img-responsive" src="<?php echo get_image($l);?>" alt="<?php echo shorten($l->title,80);?>"></a> 
             </div>
             <div class="overlay">
               <div class="overlay-content">
                 <div class="overlay-text">
                   <div class="folio-info">
-                    <h3>Обращение компании Nitetronic - </h3>
-                    <p>разработчика подушки goodnite</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/message-nitetronic.html" data-single_url="message-nitetronic.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="<?php echo site_url();?>themes/my/assets/images/portfolio/message-to-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/portfolio/goodnite-start-toon.jpg" alt="Первый запуск подушки">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Быстрый старт с goodnite</h3>
-                    <p>как попробовать подушку в работе</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/goodnite-quick-start.html" data-single_url="goodnite-quick-start.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="<?php echo site_url();?>themes/my/assets/images/portfolio/goodnite-start-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/portfolio/nitelink2-title-toon.jpg" alt="Приложение для телефона">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Nitelink2 - для смартфона</h3>
-                    <p>статистика вашего сна и храпа</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/nitelink2-intro.html" data-single_url="nitelink2-intro.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="<?php echo site_url();?>themes/my/assets/images/portfolio/nitelink2-title-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/portfolio/torino-blue-man.jpg" alt="Принцип работы">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Как действует подушка goodnite</h3>
-                    <p>видео, объясняющее работу</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/blue-man.html" data-single_url="blue-man.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="<?php echo site_url();?>themes/my/assets/images/portfolio/torino-blue-man-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/portfolio/feel-the-difference.jpg" alt="Уход и использование">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Удобство использования</h3>
-                    <p>и уход за подушкой</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/use-care-goodnite.html" data-single_url="use-care-goodnite.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="<?php echo site_url();?>themes/my/assets/images/portfolio/feel-the-difference-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/portfolio/compare-pencils.jpg" alt="Сравнение средств от храпа">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Сравнение с другими средствами от храпа</h3>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/comparing-other-snoring.html" data-single_url="comparing-other-snoring.html"><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="<?php echo site_url();?>themes/my/assets/images/portfolio/compare-pencils-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-				
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/portfolio/pillow-box-unit-toon.jpg" alt="Технические данные">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Технические параметры устройства goodnite</h3>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/technical-info.html" data-single_url="technical-info.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="<?php echo site_url();?>themes/my/assets/images/portfolio/pillow-box-unit-toon-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+					<div class="entry-header">
+						<h3><a href="<?php echo $l->url;?>"><?php echo shorten($l->title,120);?></a></h3>
+						<span class="date"><?php echo date('d M Y', $l->date);?></span>
+					</div>
+					<div class="entry-content">
+						<p><?php echo shorten($l->body, 200); ?>...</p>
+					</div>
 
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/portfolio/customer-review-toon.jpg" alt="Отзывы покупателей">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Отзывы покупателей</h3>
                   </div>
                   <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/customer-review.html" data-single_url="customer-review.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="<?php echo site_url();?>themes/my/assets/images/portfolio/customer-review-toon-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
+					<span class="folio-link"><a class="folio-read-more" href="<?php echo $l->url;?>"><i class="fas fa-link"></i></a></span> 
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+		<?php endforeach;?>
 		
 		</div>  <!-- row 1-->
 

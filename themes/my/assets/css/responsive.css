@@ -79,10 +79,10 @@
 		display:none;
 	}
 
-	#home-slider .caption h1 {
-		font-size: 38px;
+	#home-slider .caption h1,  #home-slider .caption h2 {
+		font-size: 30px;
 	}
-	#home-slider .caption h2 {
+	#home-slider .caption h3 {
 		font-size: 24px;
 	}
 	

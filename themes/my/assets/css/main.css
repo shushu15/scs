@@ -248,9 +248,9 @@ section {
   margin-right: 5%;
 }
 
-#home-slider .caption h1 {
+#home-slider .caption h1,  #home-slider .caption h2 {
   color: #fff;
-  font-size: 60px;
+  font-size: 46px;
   font-weight: 700;
   margin-bottom: 30px;
   background: rgba(0, 0, 0, 0.2);
@@ -259,33 +259,59 @@ section {
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-#home-slider .caption h2 {
+#home-slider .caption h3 {
   color: #fff;
   font-weight: 600;
 }
+
  
-#home-slider .slide1 {
-	background: url(../images/slider/building_.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
-}  
-#home-slider .slide2 {
-	background: url(../images/slider/yellow.gif) center no-repeat, url(../images/slider/building.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
-}  
-#home-slider .slide3 {
-	background: url(../images/slider/green.gif) center no-repeat, url(../images/slider/building.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
-}  
-#home-slider .slide4 {
-	background: url(../images/slider/red.gif) center no-repeat, url(../images/slider/building.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
-}  
-#home-slider .slide5 {
-	background: url(../images/slider/white.gif) center no-repeat, url(../images/slider/building.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
-}  
-#home-slider .slide6 {
-	background: url(../images/slider/biruz.gif) center no-repeat, url(../images/slider/building.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
-}  
-#home-slider .slide7 {
-	background: url(../images/slider/blue.gif) center no-repeat, url(../images/slider/building.png) center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
+#home-slider .item {
+	background: center no-repeat, url(../images/slider/clouds_bg.jpg) left top no-repeat, url(../images/slider/header_bg.jpg) left top repeat;
+} 
+
+#home-slider .picture {
+	position: relative;
+	left: 50%;
+	top: 100%;
+	transform: translate(-50%, -100%);	
+	width: 821px;
+	height: 248px;	
+	background: url(../images/slider/building.png) left bottom no-repeat;
+}
+#home-slider .slide1 .picture {
+	background: url(../images/slider/building_.png) left bottom no-repeat;
+}
+
+#home-slider .picture img {
+	position: absolute;
 }
  
+#home-slider .slide2 .picture img {
+	left: 143px;
+	top: 61px;
+} 
+#home-slider .slide3 .picture img {
+	left: 123px;
+	top: 50px;
+} 
+#home-slider .slide4 .picture img {
+	left: 158px;
+	top: 63px;
+} 
+#home-slider .slide5 .picture img {
+	left: 174px;
+	top: 75px;
+} 
+#home-slider .slide6 .picture img {
+	left: 122px;
+	top: 50px;
+} 
+#home-slider .slide7 .picture img {
+	left: 131px;
+	top: 59px;
+} 
+
+
 .caption .btn-start {
   color: #fff;
   font-size: 14px;
@@ -307,6 +333,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   height: 283px;
+  transition: opacity 0s
 
 }
 
@@ -360,17 +387,6 @@ section {
   color: #fff;
 }
 
-/*
-.static-text {
-    position: absolute;
-    top: 0px;
-    width: 96.66666666666666%;
-}
-
-.static-text h2 {
-	color: #fff;
-}
-*/
 
 /* Removing BS background */
 .carousel .control-box { opacity: 0; }
@@ -411,6 +427,7 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 
 .navbar-right li.active a {
   background-color: rgba(0,0,0,.2);
+  border-bottom: 5px solid;
 }
 
 .navbar-brand {
@@ -420,6 +437,10 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 }
 .navbar-brand h1 {
   margin-top: 5px;
+}
+
+.main-nav {
+		border-top: 5px solid;
 }
 
  
@@ -479,18 +500,19 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 ********About CSS*******
 **************************/
 #about-us {
-  background-image: url(../images/bg-fading-sun-cartoon.jpg);
-  padding: 60px 0;
+  padding: 40px 0;
+  color: #000;
 }
 
 #about-us h2 {
   margin-top: 0;
-  color: #fff;
 }
 
 #about-us .lead {
   font-size: 16px;
   margin-bottom: 10px;
+  border-bottom: solid 5px;
+  transition: all 2s ease;
 }
 
 #about-us h1 {
@@ -499,6 +521,9 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 
 #about-us ul, #about-us .about-info p {
     text-align: left;
+}
+#about-us .about-info {
+	background-color: #eee;
 }
 
 
@@ -1075,7 +1100,7 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 }
 
 #contact-us {
-  background-image: url(../images/contact-bg2.jpg);
+  background-image: url(../images/contact-bg.jpg);
   padding-bottom: 90px; 
 }
 
