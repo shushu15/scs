@@ -11,29 +11,31 @@ a,
   color: #5e9ab2;
 }
 
-strong,  {
+strong  {
 	color: #FF880A;	
+}
+
+#about-us {
+  background-color: #BCD5E1;
 }
 
 .main-nav, .navbar-right li.active a,
 #about-us .lead {
 		border-color: #F7551D;
 }
-
-#news {
-  background-color: #BCD5E1;
+ #footer ul li a:hover {
+		color: #F7551D;
 }
-
 
 
 .btn.btn-primary:hover,
 .btn-submit:hover, 
+.navbar-right  > li > a:hover ,
 .dropdown-menu  > li > a:hover ,
 .our-services .col-sm-6:hover .service-icon 
 {
   background-color: #3D80A4;
 }
-#5998af
 a:hover, a:focus  {
 	color: #3D80A4;
 }

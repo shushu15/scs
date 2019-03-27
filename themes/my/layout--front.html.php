@@ -156,20 +156,23 @@
 				<img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/logo_scs_61.gif" style="border-radius: 5px;" alt="logo">
 			</div>
           </a>                    
-          <div class="navbar-brand">
-		  <i class="fas fa-phone"></i> <?php echo config('site.phone');?>
+          <div class="navbar-left">
+			<ul class="navbar-contact">
+               <li><i class="fas fa-phone"></i> <?php echo config('site.phone');?> </li> 
+               <li><i class="fas fa-envelope"></i> <?php echo config('site.email');?> </li>
+            </ul>
           </div>
 		  
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
             <li class="scroll active"><a href="#home"><i class="fas fa-home fa-lg"></i></a></li>
-            <li class="scroll"><a href="#services">Преимущества</a></li> 
-            <li><a href="/faq">Проекты</a></li>
+            <li class="scroll"><a href="#about-us">О нас </a></li> 
+            <li class="scroll"><a href="#projects">Проекты</a></li>
+            <li class="scroll"><a href="#contact">Контакты</a></li> 
 			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О нас <span class="caret"></span></a>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v fa-lg"></i></a>
 				<ul class="dropdown-menu">
-					<li><a href="#about-us">О компании СКС</a></li>
 					<li><a href="/category/news">Новости</a></li>
 					<li><a href="/licenses">Лицензии</a></li>
 					<li><a href="/review">Отзывы</a></li>
@@ -177,22 +180,15 @@
 					<li><a href="/blog">Блог</a></li>
 				</ul>
 			</li>			
-
-            <li class="scroll"><a href="#contact">Контакты</a></li> 
-			<li class="scroll"><a href="#purchase" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-cart-arrow-down fa-lg"></i></a></li>
 			
           </ul>
         </div>
       </div>
     </div><!--/#main-nav-->
   </header> <!--/#home-->
-  
-  <!-- main layout -->
-   <div class="container-fluid">
-      <div class="row">
-		<!-- right column -->
-		<div class="col-md-3 col-md-push-9">
-			<div id="news">
+
+	<section id="news">
+		<div class="container">
 			<div class="row">
 				<div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
 					<h2>Новости</h2>
@@ -227,18 +223,17 @@
 						</div>
 					</div>
 				<?php endforeach;?>
-				</div>
-				<div class="load-more wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-					<a href="/blog" class="btn-loadmore"><i class="fas fa-repeat"></i> Все новости</a>
-				</div>                
 			</div>
+			<div class="load-more wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+				<a href="/blog" class="btn-loadmore"> Все новости</a>
+			</div>                
 			</div>
-			<!--/#news-->
 		</div>
-		<!-- end right column -->
-		<!-- left column -->
-		<div class="col-md-9 col-md-pull-3">
-			<div id="about-us">
+	</section>
+			<!--/#news-->
+  
+	<section id="about-us">
+		<div class="container">
 			<div class="row">
 				<div class="col-sm-7">
 				<div class="about-info heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -267,38 +262,97 @@
 				<div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
 					<h2>Специализация</h2>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-bolt"></i> Электроснабжение.</p>
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-bolt fa-lg"></i> Электроснабжение.</p>
 					</div>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-video"></i> Системы безопасности.</p>
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-video fa-lg"></i> Системы безопасности.</p>
 					</div>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-fire-alt"></i> Системы противопожарной защиты.</p>
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-fire-alt fa-lg"></i> Системы противопожарной защиты.</p>
 					</div>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-network-wired"></i> Телекоммуникационные системы.</p>
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-network-wired fa-lg"></i> Телекоммуникационные системы.</p>
 					</div>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-magic"></i> Автоматика и диспетчеризация</p>
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-magic fa-lg"></i> Автоматика и диспетчеризация</p>
 					</div>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-temperature-high"></i> Системы отопления и водоснабжения.</p>
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-temperature-high fa-lg"></i> Системы отопления и водоснабжения.</p>
 					</div>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-plug"></i> Производство электрощитового оборудования.</p>
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-plug fa-lg"></i> Производство электрощитового оборудования.</p>
 					</div>
 				</div>
 				</div>
 			</div> <!-- row - about -->
-			</div>
-		<!--/#about-us-->
 		</div>
-		<!-- end left column -->
-	  </div>
-   </div> 	  
-  <!-- end main layout -->
+	</section>
+		<!--/#about-us-->
   
+  <section id="features" class="parallax">
+    <div class="container">
+		<div class="row">
+			<div class="heading text-center wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="100ms">
+				<h2>Почему мы</h2>
+			</div>
+		</div>
+      <div class="row count">
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+		  <i class="fas fa-birthday-cake"></i>
+          <h3 class="timer">15</h3>
+          <p>15 лет успешной работы</p>
+        </div>
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <i class="fas fa-hotel"></i>
+          <h3 class="timer">100</h3>                    
+          <p>Более 100 реализованных проектов</p>
+        </div> 
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="700ms">
+		  <i class="fas fa-edit"></i>
+          <h3>Отзывы</h3>                    
+          <p>Положительные результаты</p>
+        </div> 
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="900ms">
+		  <i class="fas fa-book"></i>
+          <h3>Лицензии</h3>
+          <p>Сертифицированные специалисты</p>
+        </div>                 
+      </div>
+    </div>
+  </section><!--/#features-->
 
+  
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+          <h2>Некоторые наши проекты</h2>
+        </div>
+      </div>
+      <div class="projects-members">
+		<?php $lists = recent_posts(true, 6);?>
+		<?php foreach ($lists as $l):?>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="projects-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="member-image">
+				<a href="<?php echo $l->url;?>"><img class="img-responsive" src="<?php echo get_image($l);?>" alt="<?php echo shorten($l->title,80);?>"></a> 
+              </div>
+              <div class="member-info">
+				<h3><a href="<?php echo $l->url;?>"><?php echo shorten($l->title,120);?></a></h3>
+				<span class="date"><?php echo date('d M Y', $l->date);?></span>
+				<p><?php echo shorten($l->body, 300); ?>...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+		<?php endforeach;?>
+		<div class="load-more wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+			<a href="/news" class="btn-loadmore">Все проекты</a>
+		</div>                
+      </div>            
+    </div>
+  </section><!--/#projects-->
   
  
   <section id="services">
@@ -634,9 +688,10 @@
         <div class="row"> 
           <div class="heading text-justify col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
             <h2>Связаться с нами</h2>
-            <p>Мы ответственно относимся к вопросу конфиденциальности сведений, полученных в связи с Вашим обращением.
-Мы гарантируем, что любые данные, полученные от Вас, не будут разглашены или использованы в иных целях, кроме как для обеспечения лучшего ответа на ваше обращение или запрос.
-Исключением могут являться случаи, когда Вы даете специальное разрешение на это, или это требуется для проведения судебного или иного государственного расследования.</p>
+            <p><p>Мы ответственно относимся к вопросу конфиденциальности сведений, полученных в связи с Вашим обращением.
+			Мы гарантируем, что любые данные, полученные от Вас, не будут разглашены или использованы в иных целях, кроме как для работы в ходе нашего совместного проекта. 
+			<span><a href="/personal">Oб использовании персональных данных</a></span>
+			</p>
           </div>
 		  <div class="form_status"> </div>
         </div>
@@ -665,16 +720,21 @@
                 <div class="form-group">
                   <button type="submit" class="btn btn-submit">Отправить</button>
                 </div>
+                <div class="form-group">
+                  <span>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», 
+				  на условиях и для целей, определенных в Согласии на обработку персональных данных</span>
+                </div>
+				
               </form>   
             </div>
             <div class="col-sm-6">
               <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                <p>Напишите сообщение или заказ на подушку goodnite.</p>
+                <p>ООО «СКС»</p>
                 <ul class="address">
-                  <li><i class="fas fa-map-marker"></i> <span> Адрес:</span> 195273, Россия, Санкт-Петербург, Пискаревский пр. 63, лит. А</li>
+                  <li><i class="fas fa-map-marker"></i> <span> Адрес:</span> 196084, Санкт-Петербург, Измайловский пр., д. 2</li>
                   <li><i class="fas fa-phone"></i> <span> Телефон:</span> <?php echo config('site.phone');?> </li>
-                  <li><i class="fas fa-envelope"></i> <span> Email:</span><a href="mailto:info@mygoodnite.ru"> info@mygoodnite.ru</a></li>
-                  <li><i class="fas fa-globe"></i> <span> Website:</span> <a href="https://www.mygoodnite.ru"> www.mygoodnite.ru</a></li>
+                  <li><i class="fas fa-envelope"></i> <span> Email:</span><a href="mailto:<?php echo config('site.email');?>">  <?php echo config('site.email');?></a></li>
+                  <li><i class="fas fa-globe"></i> <span> Website:</span> <a href="http://scs.spb.ru"> scs.spb.ru</a></li>
                 </ul>
               </div>                            
             </div>
@@ -688,52 +748,48 @@
   <footer id="footer">
     <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
       <div class="container">
-        <div class="row"> 
-          <div class="col-sm-3 col-lg-4">
-				<div class="footer-logo">
-					<img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/goodnite-logo-dark-140.png" style="border-radius: 5px;" alt="logo">				
-				</div>
+        <div class="row equal"> 
+          <div class="col-sm-6 col-lg-3">
+              <div class="single-footer">
+				<ul class="footer-menu">
+                <li><i class="fas fa-phone"></i> <?php echo config('site.phone');?> </li> 
+                <li><i class="fas fa-envelope"></i> <?php echo config('site.email');?> </li>
+                </ul>
+              </div>
 		  </div>
-          <div class="col-sm-6 col-lg-4">
-				<div class="footer-logo">
-					<a href="/"><img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/nitetronic-LOGO_header_transparent.png" alt="nitetronic logo" style="margin: auto;"></a>
-				</div>
+          <div class="col-sm-6 col-lg-3 wow fadeInRight animated">
+              <div class="single-footer">
+				<ul class="footer-menu">
+                <li><a href="#">Проекты</a></li> 
+                <li><a href="#">Новости</a></li> 
+                <li><a href="#">Блог</a></li> 
+                </ul>
+              </div>
 		  </div>
-          <div class="col-sm-3 col-lg-4">
-				<div class="footer-logo">
-				<img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/german-border.png" alt="Разработано в Германии" style="margin: auto;">
-				<div class="centered">Разработано в Германии</div>
-				</div>
+          <div class="col-sm-6 col-lg-3 wow fadeInRight animated">
+              <div class="single-footer">
+				<ul class="footer-menu">
+                <li><a href="#">Контакты</a></li> 
+                <li><a href="#">Отзывы</a></li> 
+                <li><a href="#">Лицензии</a></li> 
+                <li><a href="#">Вакансии</a></li> 
+                </ul>
+              </div>
+		  </div>
+          <div class="col-sm-6 col-lg-3">
+              <div class="single-footer">
+				<ul class="footer-menu">
+				<li>				
+					<div class="footer-logo">
+						<img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/logo_scs_44.gif" style="border-radius: 5px;" alt="logo">					
+					</div>
+				</li> 
+                <li>&copy; 1998-2019 СКС.</li> 
+                </ul>
+              </div>
 		  </div>
   	    </div>
-        <div class="row"> 
-          <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
-		  
-			<div class="social-icons">
-			<ul>
-				<li><a class="envelope" href="mailto:info@mygoodnite.ru"><i class="fas fa-envelope"></i></a></li>
-				<li><a href=<?php echo config('social.facebook') ?> data-toggle="tooltip" title="Goodnite Facebook: @nitetronic.goodnite"><i class="fab fa-facebook"></i></a></li>
-				<li><a href=<?php echo config('social.twitter') ?> data-toggle="tooltip" title="Goodnite Twitter: @GOODNITERU"><i class="fab fa-twitter"></i></a></li>
-				<li><a href=<?php echo config('social.vk') ?> data-toggle="tooltip" title="Goodnite ВКонтакте: vk.com/public174639310"><i class="fab fa-vk"></i></a></li>
-				<li><a class="skype" href="#" data-toggle="tooltip" title="GOODNITE Skype ID: "><i class="fab fab fa-skype"></i></a></li>
-				<li><a class="whatsapp" href="#" data-toggle="tooltip" title="GOODNITE WhatsApp: <?php echo config('site.phone');?>"><i class="fab fa-whatsapp"></i></a></li>
-			</ul>
-			</div>
-		  </div>
-      </div>
 	  </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <p>&copy; 2018-2019 MyGoodnite. Smart-подушка от храпа.</p>
-          </div>
-          <div class="col-sm-6">
-            <p class="pull-right">Разработка <a href="<?php echo site_url();?>">#MYGOODNITE</a></p>
-          </div>
-        </div>
-      </div>
     </div>
   </footer>
 
