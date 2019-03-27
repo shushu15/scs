@@ -156,11 +156,8 @@
 				<img class="img-responsive" src="<?php echo site_url();?>themes/my/assets/images/logo_scs_61.gif" style="border-radius: 5px;" alt="logo">
 			</div>
           </a>                    
-          <div class="navbar-left">
-			<ul class="navbar-contact">
-               <li><i class="fas fa-phone"></i> <?php echo config('site.phone');?> </li> 
-               <li><i class="fas fa-envelope"></i> <?php echo config('site.email');?> </li>
-            </ul>
+          <div class="navbar-text">
+             <i class="fas fa-phone"></i> <?php echo config('site.phone');?> 
           </div>
 		  
         </div>

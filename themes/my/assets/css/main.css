@@ -442,15 +442,11 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 .main-nav {
 		border-top: 5px solid;
 }
-.navbar-left {
+.main-nav .navbar-text {
 	color: #fff;
 	font-size: 14px;
 	font-weight: 600;
 	padding-top: 10px;
-}
-
-.main-nav .navbar-left  ol, .main-nav .navbar-left ul {
-    list-style-type: none;
 }
 
 
