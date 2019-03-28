@@ -444,9 +444,10 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 }
 .main-nav .navbar-text {
 	color: #fff;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
-	padding-top: 10px;
+	margin-top: 20px;
+	margin-bottom: 0px;
 }
 
 
