@@ -93,8 +93,6 @@
 		return false;
 	});
 	
-
-	
 	//Initiat WOW JS
 	new WOW().init();
 	//smoothScroll

@@ -17,12 +17,15 @@
   <link href="<?php echo site_url();?>themes/my/assets/css/responsive.css" rel="stylesheet">
 
   <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  
   <link rel="shortcut icon" href="<?php echo site_url();?>themes/my/assets/images/favicon.ico">
-  <link rel="apple-touch-icon" sizes="120x120" href="<?php echo site_url();?>themes/my/assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="<?php echo site_url();?>themes/my/assets/images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="<?php echo site_url();?>themes/my/assets/images/apple-icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="144x144"  href="<?php echo site_url();?>themes/my/assets/images/android-icon-144x144.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo site_url();?>themes/my/assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="<?php echo site_url();?>themes/my/assets/images/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="<?php echo site_url();?>themes/my/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileImage" content="<?php echo site_url();?>themes/my/assets/images/ms-icon-144x144.png">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">  
 
@@ -58,7 +61,7 @@
 
     <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
       <div class="carousel-inner">
-		<!-- Indicators -->
+		<!-- Indicators 
 		<ol class="carousel-indicators">
 			<li data-target="#home-slider" data-slide-to="0" class="active"></li>
 			<li data-target="#home-slider" data-slide-to="1"></li>
@@ -68,7 +71,7 @@
 			<li data-target="#home-slider" data-slide-to="5"></li>
 			<li data-target="#home-slider" data-slide-to="6"></li>
 			<li data-target="#home-slider" data-slide-to="7"></li>
-		</ol>
+		</ol> -->
         <div class="item active slide1" >
           <div class="picture">
 		  </div>
@@ -83,7 +86,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceIn" data-animation-wipe="animated bounceOut">Электроснабжение</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services" data-animation-wipe="btn btn-start animated fadeOut">а как это работает?</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/electro" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide3">
@@ -92,7 +95,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceIn" data-animation-wipe="animated bounceOut">Системы безопасности</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services" data-animation-wipe="btn btn-start animated fadeOut">а как это работает?</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/security" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide4" >
@@ -101,7 +104,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceInDown" data-animation-wipe="animated bounceOutDown">Системы противопожарной защиты</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/fireguard" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide5" >
@@ -110,7 +113,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceInDown" data-animation-wipe="animated bounceOutDown">Телекоммуникации</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/telecommunication" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide6" >
@@ -119,7 +122,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Автоматика и диспетчеризация</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/automatics" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide7" >
@@ -128,7 +131,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы отопления и водоснабжения</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/water" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
       </div>
@@ -255,25 +258,25 @@
 				<div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
 					<h2>Специализация</h2>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-bolt fa-lg"></i> Электроснабжение.</p>
+						<a href="/electro"><h3 class="lead"> <i class="fas fa-bolt fa-lg"></i> Электроснабжение.</h3></a>
 					</div>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-video fa-lg"></i> Системы безопасности.</p>
+						<a href="/security"><h3 class="lead"> <i class="fas fa-video fa-lg"> </i> Системы безопасности.</h3></a>
 					</div>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-fire-alt fa-lg"></i> Системы противопожарной защиты.</p>
+						<a href="/fireguard"><h3 class="lead"> <i class="fas fa-fire-alt fa-lg"> </i> Системы противопожарной защиты.</h3></a>
 					</div>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-network-wired fa-lg"></i> Телекоммуникационные системы.</p>
+						<a href="/telecommunication"><h3 class="lead"> <i class="fas fa-network-wired fa-lg"></i> Телекоммуникационные системы.</h3></a>
 					</div>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-magic fa-lg"></i> Автоматика и диспетчеризация</p>
+						<a href="/automatics"><h3 class="lead"><i class="fas fa-magic fa-lg"></i> Автоматика и диспетчеризация</h3></a>
 					</div>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-temperature-high fa-lg"></i> Системы отопления и водоснабжения.</p>
+						<a href="/water"><h3 class="lead"><i class="fas fa-temperature-high fa-lg"></i> Системы отопления и водоснабжения.</h3></a>
 					</div>
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-						<p class="lead six-sec-ease-in-out"><i class="fas fa-plug fa-lg"></i> Производство электрощитового оборудования.</p>
+						<a href="/elboxes"><h3 class="lead"><i class="fas fa-plug fa-lg"></i> Производство электрощитового оборудования.</h3></a>
 					</div>
 				</div>
 				</div>
@@ -333,7 +336,7 @@
               </div>
               <div class="member-info">
 				<h3><a href="<?php echo $l->url;?>"><?php echo shorten($l->title,120);?></a></h3>
-				<span class="date"><?php echo date('d M Y', $l->date);?></span>
+				<!-- <span class="date"><?php echo date('d M Y', $l->date);?></span> -->
 				<p><?php echo shorten($l->body, 300); ?>...</p>
               </div>
             </div>

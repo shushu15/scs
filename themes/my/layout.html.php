@@ -17,12 +17,15 @@
   <link href="<?php echo site_url();?>themes/my/assets/css/responsive.css" rel="stylesheet">
 
   <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  
   <link rel="shortcut icon" href="<?php echo site_url();?>themes/my/assets/images/favicon.ico">
-  <link rel="apple-touch-icon" sizes="120x120" href="<?php echo site_url();?>themes/my/assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="<?php echo site_url();?>themes/my/assets/images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="<?php echo site_url();?>themes/my/assets/images/apple-icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="144x144"  href="<?php echo site_url();?>themes/my/assets/images/android-icon-144x144.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo site_url();?>themes/my/assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="<?php echo site_url();?>themes/my/assets/images/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="<?php echo site_url();?>themes/my/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileImage" content="<?php echo site_url();?>themes/my/assets/images/ms-icon-144x144.png">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">  
 
@@ -58,7 +61,7 @@
 
     <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
       <div class="carousel-inner">
-		<!-- Indicators -->
+		<!-- Indicators 
 		<ol class="carousel-indicators">
 			<li data-target="#home-slider" data-slide-to="0" class="active"></li>
 			<li data-target="#home-slider" data-slide-to="1"></li>
@@ -68,13 +71,13 @@
 			<li data-target="#home-slider" data-slide-to="5"></li>
 			<li data-target="#home-slider" data-slide-to="6"></li>
 			<li data-target="#home-slider" data-slide-to="7"></li>
-		</ol>
+		</ol> -->
         <div class="item active slide1" >
           <div class="picture">
 		  </div>
           <div class="caption">
             <h1 class="animated bounceIn" data-animation-wipe="animated bounceOut">Инженерные системы</h1>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#about-us" data-animation-wipe="btn btn-start animated fadeOut">посмотреть</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/#about-us" data-animation-wipe="btn btn-start animated fadeOut">посмотреть</a>
           </div>
         </div>
         <div class="item slide2">
@@ -83,7 +86,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceIn" data-animation-wipe="animated bounceOut">Электроснабжение</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services" data-animation-wipe="btn btn-start animated fadeOut">а как это работает?</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/electro" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide3">
@@ -92,7 +95,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceIn" data-animation-wipe="animated bounceOut">Системы безопасности</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services" data-animation-wipe="btn btn-start animated fadeOut">а как это работает?</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/security" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide4" >
@@ -101,7 +104,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceInDown" data-animation-wipe="animated bounceOutDown">Системы противопожарной защиты</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/fireguard" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide5" >
@@ -110,7 +113,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceInDown" data-animation-wipe="animated bounceOutDown">Телекоммуникации</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/telecommunication" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide6" >
@@ -119,7 +122,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Автоматика и диспетчеризация</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/automatics" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide7" >
@@ -128,7 +131,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы отопления и водоснабжения</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/water" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
       </div>
@@ -165,7 +168,7 @@
           <ul class="nav navbar-nav navbar-right">                 
             <li class="active"><a href="/#home"><i class="fas fa-home fa-lg"></i></a></li>
             <li><a href="/#about-us">О нас </a></li> 
-            <li><a href="/#projects">Проекты</a></li>
+            <li><a href="/category/ppoekty">Проекты</a></li>
             <li><a href="/#contact">Контакты</a></li> 
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v fa-lg"></i></a>
