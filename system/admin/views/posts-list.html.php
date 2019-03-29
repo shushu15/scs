@@ -1,4 +1,4 @@
-<h2 class="post-index"><?php echo $heading ?></h2>
+﻿<h2 class="post-index"><?php echo $heading ?></h2>
 <?php if (!empty($posts)) { ?>
     <table class="post-list">
         <tr class="head">
@@ -24,7 +24,7 @@
             ?>
             <tr class="<?php echo $class ?>">
                 <td><a target="_blank" href="<?php echo $p->url ?>"><?php echo $p->title ?></a></td>
-                <td><?php echo strftime($date_format, $p->date) ?></td>
+                <td><?php echo strftime(config("date_format"), $p->date) ?></td>
                 <?php if (config("views.counter") == "true"): ?>
                     <td><?php echo $p->views ?></td><?php endif; ?>
                 <td><a target="_blank" href="<?php echo $p->authorUrl ?>"><?php echo $p->author ?></a></td>

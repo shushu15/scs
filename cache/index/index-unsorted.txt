@@ -1,1 +1,1 @@
-a:0:{}
+a:3:{i:0;s:105:"content/scsspb/blog/ppoekty/post/2009-03-29-01-28-37_featured,promyshlennost_avtomobilnyj-zavod-nissan.md";i:1;s:109:"content/scsspb/blog/ppoekty/post/2015-03-28-01-54-10_featured,promyshlennost_pivovarennyj-zavod-sab-miller.md";i:2;s:90:"content/scsspb/blog/ppoekty/post/2013-05-02-01-48-23_featured,goszakaz_mariinskij-teatr.md";}

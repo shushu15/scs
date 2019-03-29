@@ -27,9 +27,9 @@
     <div id="menu-wrapper">
         <div class="container">
             <nav id="menu">
-                <ul class="nav "><li class="item first"><a href="http://scs.spb.ru/">Главная</a></li><li class="item"><a href="http://scs.spb.ru/blog">Blog</a></li></ul>                    <form id="search-form" method="get">
-        <input type="text" class="search-input" name="search" value="Search" onfocus="if (this.value == 'Search') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search';}">
-        <input type="submit" value="Search" class="search-button">
+                <ul class="nav "><li class="item first"><a href="http://scs.spb.ru/">Главная</a></li><li class="item"><a href="http://scs.spb.ru/blog">Blog</a></li><li class="item"><a href="http://scs.spb.ru/licenses">Лицензии</a></li><li class="item"><a href="http://scs.spb.ru/personal">Обработка персональных данных</a></li><li class="item"><a href="http://scs.spb.ru/review">Отзывы наших клиентов</a></li><li class="item last"><a href="http://scs.spb.ru/vacancy">Вакансии компании СКС С-Петербург</a></li></ul>                    <form id="search-form" method="get">
+        <input type="text" class="search-input" name="search" value="Поиск" onfocus="if (this.value == 'Поиск') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Поиск';}">
+        <input type="submit" value="Поиск" class="search-button">
     </form>            </nav>
         </div>
     </div>
@@ -52,7 +52,7 @@
         <input type="text" class="" name="user"/><br><br>
         Password <span class="required">*</span> <br>
         <input type="password" class="" name="password"/><br><br>
-        <input type="hidden" name="csrf_token" value="7a205531ca0c5fc1cbc2901644e6b5edb8db119f">
+        <input type="hidden" name="csrf_token" value="f19f8caa05af1a58635c0458c1288acc0bf586cd">
                 <input type="submit" name="submit" value="Login"/>
     </form>            </section>
         </div>

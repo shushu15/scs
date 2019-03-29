@@ -9,7 +9,7 @@
   <meta name="author" content="СКС">
   <link href="http://scs.spb.ru/themes/my/assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="http://scs.spb.ru/themes/my/assets/css/animate.min.css" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="http://scs.spb.ru/themes/my/assets/css/lightbox.css" rel="stylesheet">
   <link href="http://scs.spb.ru/themes/my/assets/css/main.css" rel="stylesheet">
   <link href="http://scs.spb.ru/themes/my/assets/css/blog.css" rel="stylesheet">
@@ -37,38 +37,13 @@
 <body>
 
   <!--.preloader-->
-  <div class="preloader"> <span class="fa-stack fa-2x">
-		<i class="fas fas fa-spinner fa-stack-2x fa-spin"></i>
-		<i class="fas fas fa-spinner fa-stack-1x fa-spin" data-fa-transform="rotate-90"></i>
-		</span>  
+  <div class="preloader"> <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
  </div>
   <!--/.preloader-->
 
   <header id="home">
 		<div class="header_top"><!--header_top-->
 			<div class="container">
-				<div class="row align-items-start">
-					<div class="col-sm-8">
-						<div class="contactinfo">
-							<ul class="nav nav-pills">
-								<li id="wcons-topttl"><a href="#"><i class="fas fa-hashtag"></i>nitetronic goodnite™: умная подушка от храпа</a></li>
-								<li><a href="#"><i class="fas fa-phone"></i> 8 800 290-50-60</a></li>
-								<li><a href="#contact"><i class="fas fa-envelope" data-toggle="tooltip" title="Заполнить контактную форму"></i> info@mygoodnite.ru</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="top-social-icons pull-right">
-							<ul class="nav  navbar-nav">
-								<li><a href=https://www.facebook.com data-toggle="tooltip" title="Goodnite Facebook: @nitetronic.goodnite"><i class="fab fa-facebook"></i></a></li>
-								<li><a href=https://twitter.com data-toggle="tooltip" title="Goodnite Twitter: @GOODNITERU"><i class="fab fa-twitter"></i></a></li>
-								<li><a href=https://vk.com data-toggle="tooltip" title="Goodnite ВКонтакте: vk.com/public174639310"><i class="fab fa-vk"></i></a></li>
-								<li><a href="#" data-toggle="tooltip" title="Goodnite Skype ID: "><i class="fab fa-skype"></i></a></li>
-								<li><a href="#" data-toggle="tooltip" title="Goodnite WhatsApp: +7 921 9642700"><i class="fab fa-whatsapp"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div><!--/header_top-->      
 
@@ -83,40 +58,67 @@
 			<li data-target="#home-slider" data-slide-to="4"></li>
 			<li data-target="#home-slider" data-slide-to="5"></li>
 			<li data-target="#home-slider" data-slide-to="6"></li>
+			<li data-target="#home-slider" data-slide-to="7"></li>
 		</ol>
         <div class="item active slide1" >
+          <div class="picture">
+		  </div>
           <div class="caption">
-            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Технологии комфорта и безопасности</h1>
+            <h1 class="animated bounceIn" data-animation-wipe="animated bounceOut">Инженерные системы</h1>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#about-us" data-animation-wipe="btn btn-start animated fadeOut">посмотреть</a>
           </div>
         </div>
         <div class="item slide2">
+          <div class="picture">
+			<img src="http://scs.spb.ru/themes/my/assets/images/slider/yellow.gif">
+		  </div>
           <div class="caption">
-            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Электроснабжение и <span>системы безопасности</span></h1>
+            <h2 class="animated bounceIn" data-animation-wipe="animated bounceOut">Электроснабжение</span></h2>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services" data-animation-wipe="btn btn-start animated fadeOut">а как это работает?</a>
           </div>
         </div>
-        <div class="item slide3" >
+        <div class="item slide3">
+          <div class="picture">
+			<img src="http://scs.spb.ru/themes/my/assets/images/slider/green.gif">
+		  </div>
           <div class="caption">
-            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы противопожарной защиты</span></h1>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <h2 class="animated bounceIn" data-animation-wipe="animated bounceOut">Системы безопасности</span></h2>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services" data-animation-wipe="btn btn-start animated fadeOut">а как это работает?</a>
           </div>
         </div>
         <div class="item slide4" >
+          <div class="picture">
+			<img src="http://scs.spb.ru/themes/my/assets/images/slider/red.gif">
+		  </div>
           <div class="caption">
-            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Телекоммуникационные системы</span></h1>
+            <h2 class="animated bounceInDown" data-animation-wipe="animated bounceOutDown">Системы противопожарной защиты</span></h2>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide5" >
+          <div class="picture">
+			<img src="http://scs.spb.ru/themes/my/assets/images/slider/white.gif">
+		  </div>
           <div class="caption">
-            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Автоматика и диспетчеризация</span></h1>
+            <h2 class="animated bounceInDown" data-animation-wipe="animated bounceOutDown">Телекоммуникации</span></h2>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide6" >
+          <div class="picture">
+			<img src="http://scs.spb.ru/themes/my/assets/images/slider/biruz.gif">
+		  </div>
           <div class="caption">
-            <h1 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы отопления и водоснабжения</span></h1>
+            <h2 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Автоматика и диспетчеризация</span></h2>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+          </div>
+        </div>
+        <div class="item slide7" >
+          <div class="picture">
+			<img src="http://scs.spb.ru/themes/my/assets/images/slider/blue.gif">
+		  </div>
+          <div class="caption">
+            <h2 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы отопления и водоснабжения</span></h2>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
@@ -139,553 +141,261 @@
           </button>
           <a class="navbar-brand" href="/">
 			<div class="col-xs-x hidden-sm hidden-md hidden-lg">
-				<img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/goodnite-logo-dark-44.png" style="border-radius: 5px;" alt="logo">
+				<img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/logo_scs_44.gif" style="border-radius: 5px;" alt="logo">
 			</div>
 			<div class="hidden-xs col-sm-x col-md-x col-lg-x">
-				<img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/goodnite-logo-dark-140.png" style="border-radius: 5px;" alt="logo">
+				<img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/logo_scs_61.gif" style="border-radius: 5px;" alt="logo">
 			</div>
           </a>                    
+          <div class="navbar-text">
+             <i class="fas fa-phone"></i> 8 (800) 201-25-59 
+          </div>
+		  
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
             <li class="scroll active"><a href="#home"><i class="fas fa-home fa-lg"></i></a></li>
-            <li class="scroll"><a href="#services">Преимущества</a></li> 
-            <li><a href="/faq">Проекты</a></li>
+            <li class="scroll"><a href="#about-us">О нас </a></li> 
+            <li class="scroll"><a href="#projects">Проекты</a></li>
+            <li class="scroll"><a href="#contact">Контакты</a></li> 
 			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">О нас <span class="caret"></span></a>
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v fa-lg"></i></a>
 				<ul class="dropdown-menu">
-					<li><a href="#about-us">О компании СКС</a></li>
-					<li><a href="/category/news">Новости</a></li>
+					<li><a href="/category/novosti">Новости</a></li>
 					<li><a href="/licenses">Лицензии</a></li>
 					<li><a href="/review">Отзывы</a></li>
 					<li><a href="/vacancy">Вакансии</a></li>
 					<li><a href="/blog">Блог</a></li>
 				</ul>
 			</li>			
-
-            <li class="scroll"><a href="#contact">Контакты</a></li> 
-			<li class="scroll"><a href="#purchase" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-cart-arrow-down fa-lg"></i></a></li>
 			
           </ul>
         </div>
       </div>
     </div><!--/#main-nav-->
   </header> <!--/#home-->
-  
-   <section id="about-us" class="parallax">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-7">
-          <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2>О компании</h2>
-			
-			<p><strong>СКС</strong> — одна из ведущих проектно-монтажных организаций, работающая в сфере инженерных систем в Санкт-Петербурге.
-			
-			</p><p>
-			Компания специализируется на обеспечении производственных, общественных и жилых зданий полным комплексом инженерных систем: от слаботочных сетей до электроснабжения. 
-			«СКС» выполняет весь цикл работ, начиная от обследования и проектирования до сдачи строительно-монтажных работ и осуществления гарантийного обслуживания. 
-			Компания имеет возможность выбирать поставщиков оборудования и, тем самым, оптимизировать выбираемые технические решения. 
-			На некоторых объектах организация выступает в роли генерального проектировщика и генерального подрядчика по всем инженерным системам здания. 
-			
-			</p><p>
-			«СКС» ориентируется на средних и крупных Заказчиков. За более чем десятилетнюю историю компании, были реализованы проекты для автоконцерна Nissan, сети отелей Holiday Inn, Александрийского театра, 
-			компании «Даринда» (гипермаркеты «О'Кей»), стройкорпорации «Элис» (ТК «Владимирский пассаж», жилые комплексы) и многих других. 
 
-			</p><p>
-			Компания «СКС» объединила команду высококвалифицированных специалистов, способных выполнить основную часть работ своими силами, без привлечения субподрядных организаций. 
-			Главные ценности деятельности организации: профессионализм сотрудников и высокое качество предоставляемых услуг. 			
-			</p>
+	<section id="news">
+		<div class="container">
+			<div class="row">
+				<div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+					<h2>Новости</h2>
+				</div>
+			</div>
+			<div class="blog-posts">
+			<div class="row">
+													<div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+						<div class="post-thumb">
+							<a href="http://scs.spb.ru/2015/03/pivovarennyj-zavod-sab-miller"><img class="img-responsive" src="http://scs.spb.ru/content/images/20190329021613-miller-small.jpg" alt="Пивоваренный завод SAB Miller"></a> 
+							<div class="post-icon">
+								
+								<i class="fas fa-pencil-alt"></i>
+														</div>
+						</div>
+						<div class="entry-header">
+							<h3><a href="http://scs.spb.ru/2015/03/pivovarennyj-zavod-sab-miller">Пивоваренный завод SAB Miller</a></h3>
+							<span class="date">28 Mar 2015</span>
+							<span class="cetagory">в <strong><a href="http://scs.spb.ru/category/ppoekty">Пpоекты</a></strong></span>
+						</div>
+						<div class="entry-content">
+							<p>г. Ульяновск . Проектирование и монтаж систем пожаротушения на пивоваренном заводе третьего производителя...</p>
+						</div>
+					</div>
+									<div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+						<div class="post-thumb">
+							<a href="http://scs.spb.ru/2013/05/mariinskij-teatr"><img class="img-responsive" src="http://scs.spb.ru/content/images/20190329014817-mariinsky-small.jpg" alt="Мариинский театр"></a> 
+							<div class="post-icon">
+								
+								<i class="fas fa-pencil-alt"></i>
+														</div>
+						</div>
+						<div class="entry-header">
+							<h3><a href="http://scs.spb.ru/2013/05/mariinskij-teatr">Мариинский театр</a></h3>
+							<span class="date">02 May 2013</span>
+							<span class="cetagory">в <strong><a href="http://scs.spb.ru/category/ppoekty">Пpоекты</a></strong></span>
+						</div>
+						<div class="entry-content">
+							<p>Государственный Академический Мариинский театр (2-я сцена). монтаж автоматики вентиляции, холодоснабжения и...</p>
+						</div>
+					</div>
+									<div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+						<div class="post-thumb">
+							<a href="http://scs.spb.ru/2009/03/avtomobilnyj-zavod-nissan"><img class="img-responsive" src="http://scs.spb.ru/content/images/20190329014303-nissan-small.jpg" alt="Автомобильный завод «Ниссан»"></a> 
+							<div class="post-icon">
+								
+								<i class="fas fa-pencil-alt"></i>
+														</div>
+						</div>
+						<div class="entry-header">
+							<h3><a href="http://scs.spb.ru/2009/03/avtomobilnyj-zavod-nissan">Автомобильный завод «Ниссан»</a></h3>
+							<span class="date">29 Mar 2009</span>
+							<span class="cetagory">в <strong><a href="http://scs.spb.ru/category/ppoekty">Пpоекты</a></strong></span>
+						</div>
+						<div class="entry-content">
+							<p>Автомобильный завод «Ниссан», г. Санкт-Петербург - проектирование и монтаж водяного, газового и порошкового...</p>
+						</div>
+					</div>
+							</div>
+			<div class="load-more wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+				<a href="/category/novosti" class="btn-loadmore"> Все новости</a>
+			</div>                
+			</div>
+		</div>
+	</section>
+			<!--/#news-->
+  
+	<section id="about-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7">
+				<div class="about-info heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+					<h2>О компании</h2>
 			
-          </div>
-        </div>
-        <div class="col-sm-5">
-          <div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2>Специализация</h2>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <p class="lead">Электроснабжение.</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="67"></div>
-              </div>
-            </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
-              <p class="lead">Системы безопасности.</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="100"></div>
-              </div>
-            </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
-              <p class="lead">Системы противопожарной защиты.</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="100"></div>
-              </div>
-            </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-              <p class="lead">Телекоммуникационные системы.</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="100"></div>
-              </div>
-            </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
-              <p class="lead">Автоматика и диспетчеризация</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="100"></div>
-              </div>
-            </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
-              <p class="lead">Системы отопления и водоснабжения.</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="100"></div>
-              </div>
-            </div>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-              <p class="lead">Производство электрощитового оборудования.</p>
-              <div class="progress">
-                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- row - about -->
-    </div>
-  </section> <!--/#about-us-->
- 
-  <section id="services">
+					<p><strong>СКС</strong> — одна из ведущих проектно-монтажных организаций, работающая в сфере инженерных систем в Санкт-Петербурге.
+			
+					</p><p>
+					Компания специализируется на обеспечении производственных, общественных и жилых зданий полным комплексом инженерных систем: от слаботочных сетей до электроснабжения. 
+					«СКС» выполняет весь цикл работ, начиная от обследования и проектирования до сдачи строительно-монтажных работ и осуществления гарантийного обслуживания. 
+					Компания имеет возможность выбирать поставщиков оборудования и, тем самым, оптимизировать выбираемые технические решения. 
+					На некоторых объектах организация выступает в роли генерального проектировщика и генерального подрядчика по всем инженерным системам здания. 
+			
+					</p><p>
+					«СКС» ориентируется на средних и крупных Заказчиков. За более чем десятилетнюю историю компании, были реализованы проекты для автоконцерна Nissan, сети отелей Holiday Inn, Александрийского театра, 
+					компании «Даринда» (гипермаркеты «О'Кей»), стройкорпорации «Элис» (ТК «Владимирский пассаж», жилые комплексы) и многих других. 
+
+					</p><p>
+					Компания «СКС» объединила команду высококвалифицированных специалистов, способных выполнить основную часть работ своими силами, без привлечения субподрядных организаций. 
+					Главные ценности деятельности организации: профессионализм сотрудников и высокое качество предоставляемых услуг. 			
+					</p>
+		
+				</div>
+				</div>
+				<div class="col-sm-5">
+				<div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+					<h2>Специализация</h2>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-bolt fa-lg"></i> Электроснабжение.</p>
+					</div>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-video fa-lg"></i> Системы безопасности.</p>
+					</div>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-fire-alt fa-lg"></i> Системы противопожарной защиты.</p>
+					</div>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-network-wired fa-lg"></i> Телекоммуникационные системы.</p>
+					</div>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="700ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-magic fa-lg"></i> Автоматика и диспетчеризация</p>
+					</div>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-temperature-high fa-lg"></i> Системы отопления и водоснабжения.</p>
+					</div>
+					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
+						<p class="lead six-sec-ease-in-out"><i class="fas fa-plug fa-lg"></i> Производство электрощитового оборудования.</p>
+					</div>
+				</div>
+				</div>
+			</div> <!-- row - about -->
+		</div>
+	</section>
+		<!--/#about-us-->
+  
+  <section id="features" class="parallax">
     <div class="container">
-      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-        <div class="row">
-          <div  class="col-sm-7">
-            <h2 class="text-center">Что вы получаете</h2>
-			<ul class="services-what">
-            <li>Подушка поставляется в коробке размером 82x46x15см, вес 5,8кг.</li>
-            <li>goodnite подушка с моющейся наволочкой</li>
-			<li>Электронный блок управления</li>
-			<li>Инструкция пользователя, гарантийная карта</li>
-			<li>Источник питания с переходным кабелем</li>
-			</ul>
-          </div>
-          <div  class="col-sm-5">
-			<img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/nitetronic2.jpg" alt="Комплектация подушки против храпа">
-          </div>
+		<div class="row">
+			<div class="heading text-center wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="100ms">
+				<h2>Почему мы</h2>
+			</div>
+		</div>
+      <div class="row count">
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
+		  <i class="fas fa-birthday-cake"></i>
+          <h3 class="timer">15</h3>
+          <p>15 лет успешной работы</p>
+        </div>
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <i class="fas fa-hotel"></i>
+          <h3 class="timer">100</h3>                    
+          <p>Более 100 реализованных проектов</p>
         </div> 
-      </div>
-	  
-      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms" >
-        <div class="row">
-          <div class="text-center col-sm-6" style="background-color: #eee; margin-bottom: 50px;">
-            <h2>Как работает подушка goodnite.</h2>
-			<div class="services-what text-justify"> 
-			<p>Goodnite продолжительно отслеживает дыхание пользователя. При выявлении признаков храпа устройство мягко автоматически поворачивает голову пользователя на сторону. 
-			Поворот головы в сторону увеличивает расстояние между языком и горлом, что останавливает вибрацию мягких тканей в верхних дыхательных путях и понижают громкость храпа, также одновременно улучшает дыхание. 
-			Воздушная камера внутри подушки остается наполненной в течение некоторого периода, поддерживая голову в определенном положении для того, чтобы предотвратить повторение храпа.</p>
-			<p>Goodnite фокусируется на храпе человека, голова которого лежит на подушке. Это препятствует непреднамеренным действиям в отношении храпа супруга/и. 
-			Пожалуйста, придерживайтесь расстояния 10 см между goodnite и подушкой вашего партнера.</p>
-			<p>Эффективность goodnite и «Качество сна» может быть определено при использовании приложения на Nitelink2 на смартфонах Android или iOs.</p>
-           </div>
-          </div> 
-          <div class="text-center col-sm-6">
-			<img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/Optimized-Nitetronic_Tech_Drawing_with_Rus_Labels_654.jpg" alt="Сон без храпа с умной подушкой">
-          </div> 
-        </div>
-      </div>
-    </div>
-  </section><!--/#services-->
-	  
-  <section id="advantage" class="parallax">
-    <div class="container">
-      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-        <div class="row">
-          <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2>Преимущества смарт-подушки goodnite </h2>
-          </div>
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="700ms">
+		  <i class="fas fa-edit"></i>
+          <h3>Отзывы</h3>                    
+          <p>Положительные результаты</p>
         </div> 
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="900ms">
+		  <i class="fas fa-book"></i>
+          <h3>Лицензии</h3>
+          <p>Сертифицированные специалисты</p>
+        </div>                 
       </div>
-      <div class="text-center our-services">
-        <div class="row equal" style="margin-top:20px; margin-bottom:0px;">
-          <div class="col-lg-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="service-icon">
-              <i class="fas fa-bell-slash"></i>
-            </div>
-            <div class="service-info">
-              <h3>Невмешательство в сон</h3>
-              <p>Одной из важнейших особенностей и главным преимуществом подушки goodnite является то, что она не мешает вам спать! 
-			  Она не будет пробуждать вас ударами тока, звуками или вибрациями, заставляя сменить позу. Подушка goodnite заботится о качестве вашего сна, тихо и незаметно делая свою работу. 
-			  Ваш ночной сон и отдых – это самое главное!.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
-            <div class="service-icon">
-              <i class="fas fa-cloud"></i>
-            </div>
-            <div class="service-info">
-              <h3>Неинвазивность</h3>
-              <p>Несомненный плюс goodnite – это то, что устройство снижает и предотвращает храп щадящим для человека способом. 
-				goodnite не оказывает воздействия на кожу, решая проблему храпа без помощи медицинских инструментов и операций.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
-            <div class="service-icon">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <div class="service-info">
-              <h3>Высокие результаты</h3>
-              <p>Клинические исследования, проведенные во время испытаний подушки, показали, что при использовании goodnite общий уровень храпа снижается минимум на 67%. 
-			  Средние показатели снижения храпа по времени и громкости обычно варьируются от 80 до 90%. Такие показатели являются очень высоким результатом.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
-            <div class="service-icon">
-              <i class="fas fa-procedures"></i>
-            </div>
-            <div class="service-info">
-              <h3>Клинически доказанный эффект</h3>
-              <p>goodnite прошла испытания в ряде университетов и клиник Европы. Ознакомиться с результатами испытаний вы можете на этой странице.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
-            <div class="service-icon">
-			  <i class="fas fa-bed"></i>
-            </div>
-            <div class="service-info">
-              <h3>Комфорт во время сна</h3>
-              <p>goodnite – самое комфортное средство против храпа из всех, которые есть сегодня на рынке. Ничего лишнего и непривычного для вашего сна и отдыха! 
-			  Вы просто используете goodnite как свою обычную подушку. </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
-            <div class="service-icon">
-              <i class="fas fa-umbrella"></i>
-            </div>
-            <div class="service-info">
-              <h3>Отсутствие побочных эффектов</h3>
-              <p>goodnite не оказывает на организм каких-либо вредных воздействий, а противопоказания к её использованию отсутствуют или минимальны.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row" style="margin-top:20px; margin-bottom:0px;">
-	        <div class="text-center col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-			  <a class="btn btn-primary btn-round-lg btn-lg" style="white-space:normal !important; word-wrap: break-word; word-break: normal;" href="#" data-toggle="modal" data-target="#exampleModalCenter">
-				<i class="fas fa-shopping-cart fa-lg"></i> Купить смарт-подушку nitetronic goodnite за   руб. для хорошего сна</a>
-			</div>
-		</div>
-      </div>
-   </div>
-</section> <!-- advantage -->
-
-
-  <section id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <h2>Подробнее о goodnite и ее использовании</h2>
-          </div>
-      </div> 
     </div>
-    <div class="container-fluid">
-       <div class="row">   <!-- row 1-->
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/portfolio/message-to.jpg" alt="К нашим покупателям">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Обращение компании Nitetronic - </h3>
-                    <p>разработчика подушки goodnite</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/message-nitetronic.html" data-single_url="message-nitetronic.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="http://scs.spb.ru/themes/my/assets/images/portfolio/message-to-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/portfolio/goodnite-start-toon.jpg" alt="Первый запуск подушки">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Быстрый старт с goodnite</h3>
-                    <p>как попробовать подушку в работе</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/goodnite-quick-start.html" data-single_url="goodnite-quick-start.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="http://scs.spb.ru/themes/my/assets/images/portfolio/goodnite-start-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/portfolio/nitelink2-title-toon.jpg" alt="Приложение для телефона">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Nitelink2 - для смартфона</h3>
-                    <p>статистика вашего сна и храпа</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/nitelink2-intro.html" data-single_url="nitelink2-intro.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="http://scs.spb.ru/themes/my/assets/images/portfolio/nitelink2-title-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/portfolio/torino-blue-man.jpg" alt="Принцип работы">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Как действует подушка goodnite</h3>
-                    <p>видео, объясняющее работу</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/blue-man.html" data-single_url="blue-man.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="http://scs.spb.ru/themes/my/assets/images/portfolio/torino-blue-man-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/portfolio/feel-the-difference.jpg" alt="Уход и использование">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Удобство использования</h3>
-                    <p>и уход за подушкой</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/use-care-goodnite.html" data-single_url="use-care-goodnite.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="http://scs.spb.ru/themes/my/assets/images/portfolio/feel-the-difference-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/portfolio/compare-pencils.jpg" alt="Сравнение средств от храпа">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Сравнение с другими средствами от храпа</h3>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/comparing-other-snoring.html" data-single_url="comparing-other-snoring.html"><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="http://scs.spb.ru/themes/my/assets/images/portfolio/compare-pencils-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-				
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/portfolio/pillow-box-unit-toon.jpg" alt="Технические данные">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Технические параметры устройства goodnite</h3>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/technical-info.html" data-single_url="technical-info.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="http://scs.spb.ru/themes/my/assets/images/portfolio/pillow-box-unit-toon-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  </section><!--/#features-->
 
-        <div class="col-sm-3 col-xs-6">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/portfolio/customer-review-toon.jpg" alt="Отзывы покупателей">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Отзывы покупателей</h3>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="/customer-review.html" data-single_url="customer-review.html" ><i class="fas fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="http://scs.spb.ru/themes/my/assets/images/portfolio/customer-review-toon-w.jpg" data-lightbox="portfolio"><i class="fas fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-		
-		</div>  <!-- row 1-->
-
-	  
-    </div>
-    <div id="portfolio-single-wrap">
-      <div id="portfolio-single">
-      </div>
-    </div><!-- /#portfolio-single-wrap -->
-	
-  </section><!--/#portfolio-->
-
-  <section id="purchase">
   
-    <div class="container">
-	
-		<div itemscope itemtype="http://schema.org/Product" class="row">
-	      <div class="col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-			<span class="pull-right"><img class="img-responsive" itemprop="image" src="http://scs.spb.ru/themes/my/assets/images/main-purchase.jpg" alt="купить подушку от храпа goodnite"></span>
-           </div>
- 	      <div class="col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-			<h2 itemprop="name">Обновленная смарт-подушка от храпа goodnite™ по специальной цене</h2>
-			<meta itemprop="brand" content="Nitetronic goodnite">
-			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-				<h2><span style="text-decoration:line-through;"> руб.</span>  <span> руб.</span></h2>
-				<meta itemprop="price" content="">
-				<meta itemprop="priceCurrency" content="RUB">
-				<meta itemprop="availability" content="PreOrder" />
-			</div>	
-			<div align="center">
-			<a class="btn btn-primary btn-round-lg btn-lg" style="white-space:normal !important; word-wrap: break-word; word-break: normal;" href="#" data-toggle="modal" data-target="#exampleModalCenter">
-				<i class="fas fa-shopping-cart fa-lg"></i> Заказать goodnite</a>
-			</div>
-			
-			<ul itemprop="description">
-			<li>Более удобная для сна</li>
-			<li>Улучшенный алгоритм для точного определения храпа</li>
-			<li>Расширенный анализ в приложении Nitelink2 для смартфона</li>
-			<li>Точное определение храпа при различных положениях головы</li>
-			<li>Неинвазивная, Без рецепта, Без сторонних эффектов</li>
-			<li>Подключается к смартфону</li>
-			</ul>
-          </div>
-		</div>
-    </div>
-
-
-
-	<!-- Modal -->
-	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<form id="purchase-form" name="purchase-form" method="post" action="/orderbymail.php">
-				<div class="modal-header">
-					<h3 class="modal-title" id="exampleModalLongTitle">Заказать смарт-подушку goodnite</h3>
-					<button type="button" class="close" id="purchase_close" data-dismiss="modal" aria-label="Закрыть">
-					<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="form-group">
-						<input type="text" name="name" class="form-control" placeholder="Имя" required="required"  />
-						<input type="email" name="email" class="form-control" placeholder="Email Адрес" required="required" />
-						<input type="tel" id="phone" name="phone" class="form-control" placeholder="Телефон" pattern="(\+?\d[- .]*){7,13}" title="Международный, федеральный или местный телефонный номер" 
-						required="required" />
-						<span class="validity"></span>
-						<textarea name="message" id="message" class="form-control" rows="4" placeholder="Комментарий к заказу"></textarea>
-					</div>                        
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
-					<button type="submit" class="btn btn-submit">Отправить заказ</button>
-					<h4>Или позвоните по телефону 8 800 290-50-60 для заказа.</h4>
-					<div class="form_purchase_status"></div>
-				</div>
-				</form> 
-			</div>
-		</div>
-	</div>
-  
-  </section><!--/#purchase-->
-  
-  <section id="twitter" class="parallax">
-    <div>
-      <a class="twitter-left-control" href="#twitter-carousel" role="button" data-slide="prev"><i class="fas fa-angle-left"></i></a>
-      <a class="twitter-right-control" href="#twitter-carousel" role="button" data-slide="next"><i class="fas fa-angle-right"></i></a>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1">
-            <div class="twitter-icon text-center">
-              <i class="fab fa-twitter"></i>
-              <h4>Наш канал в Twitter <a href="https://twitter.com/goodniteru">@goodniteru</a></h4>
-            </div>
-            <div id="twitter-carousel" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="item active wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                  <p>Сравнение устройств от храпа. Что такое храп? Это низкие и вибрирующие звуки, которые издают некоторые люди во время сна из-за расслабления мягкого нёба и язычка... <a href="https://twitter.com/goodniteru/status/1069904474490179584"><span>#MYGOODNITE #храп #стопхрап #goodnite</span></a></p>
-                </div>
-                <div class="item">
-                  <p>#Храп и #семейные отношения. Рассмотрим одну из частых ситуаций, в которой один из супругов страдает храпом... <a href="https://twitter.com/goodniteru/status/1068573320206065664"><span>#MYGOODNITE #храп #семейныеотношения</span></a></p>
-                </div>
-                <div class="item">                                
-                  <p>Презентация MYGOODNITE обновленной smart-системы nitronic goodnite и мобильного приложения Nitelink2 <a href="https://twitter.com/goodniteru/status/1069541145422766080"><span>#ПодушкаОтХрапа #храп #Nitelink #goodnite</span></a></p>
-                </div>
-              </div>                        
-            </div>                    
-          </div>
-        </div>
-      </div>
-    </div>
-  </section><!--/#twitter-->
-
-  <section id="blog">
+  <section id="projects">
     <div class="container">
       <div class="row">
         <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-          <h2>Блог компании</h2>
-          <p>Документы, статьи, обсуждения, новинки и разработки из области сомнологии</p>
+          <h2>Некоторые наши проекты</h2>
         </div>
       </div>
-      <div class="blog-posts">
+      <div class="projects-members">
         <div class="row">
-				        </div>
-        <div class="load-more wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-          <a href="/blog" class="btn-loadmore"><i class="fas fa-repeat"></i> Перейти в блог</a>
-        </div>                
-      </div>
+				          <div class="col-sm-4">
+            <div class="projects-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="member-image">
+				<a href="http://scs.spb.ru/2015/03/pivovarennyj-zavod-sab-miller"><img class="img-responsive" src="http://scs.spb.ru/content/images/20190329021613-miller-small.jpg" alt="Пивоваренный завод SAB Miller"></a> 
+              </div>
+              <div class="member-info">
+				<h3><a href="http://scs.spb.ru/2015/03/pivovarennyj-zavod-sab-miller">Пивоваренный завод SAB Miller</a></h3>
+				<span class="date">28 Mar 2015</span>
+				<p>г. Ульяновск . Проектирование и монтаж систем пожаротушения на пивоваренном заводе третьего производителя пива в мире – компании SABMiller в Ульяновске. Она владеет...</p>
+              </div>
+            </div>
+          </div>
+		          <div class="col-sm-4">
+            <div class="projects-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="member-image">
+				<a href="http://scs.spb.ru/2013/05/mariinskij-teatr"><img class="img-responsive" src="http://scs.spb.ru/content/images/20190329014817-mariinsky-small.jpg" alt="Мариинский театр"></a> 
+              </div>
+              <div class="member-info">
+				<h3><a href="http://scs.spb.ru/2013/05/mariinskij-teatr">Мариинский театр</a></h3>
+				<span class="date">02 May 2013</span>
+				<p>Государственный Академический Мариинский театр (2-я сцена). монтаж автоматики вентиляции, холодоснабжения и противодымной защиты.
+Специалисты компании «СКС»...</p>
+              </div>
+            </div>
+          </div>
+		          <div class="col-sm-4">
+            <div class="projects-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="member-image">
+				<a href="http://scs.spb.ru/2009/03/avtomobilnyj-zavod-nissan"><img class="img-responsive" src="http://scs.spb.ru/content/images/20190329014303-nissan-small.jpg" alt="Автомобильный завод «Ниссан»"></a> 
+              </div>
+              <div class="member-info">
+				<h3><a href="http://scs.spb.ru/2009/03/avtomobilnyj-zavod-nissan">Автомобильный завод «Ниссан»</a></h3>
+				<span class="date">29 Mar 2009</span>
+				<p>Автомобильный завод «Ниссан», г. Санкт-Петербург - проектирование и монтаж водяного, газового и порошкового пожаротушения, противопожарного водопровода, пожарной...</p>
+              </div>
+            </div>
+          </div>
+		        </div>
+		<div class="load-more wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+			<a href="/category/ppoekty" class="btn-loadmore">Все проекты</a>
+		</div>                
+      </div>            
     </div>
-  </section><!--/#blog-->
+  </section><!--/#projects-->
+  
+ 
 		
   <section id="dynamic">
 
-      <h1>Публикации не найдены</h1>  </section>
+      <!-- Main Content -->
+<div class="container">
+		<!-- Изменяемое содержимое первой страницы --->
+</div>  </section>
 
   
   <section id="contact">
@@ -694,9 +404,10 @@
         <div class="row"> 
           <div class="heading text-justify col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
             <h2>Связаться с нами</h2>
-            <p>Мы ответственно относимся к вопросу конфиденциальности сведений, полученных в связи с Вашим обращением.
-Мы гарантируем, что любые данные, полученные от Вас, не будут разглашены или использованы в иных целях, кроме как для обеспечения лучшего ответа на ваше обращение или запрос.
-Исключением могут являться случаи, когда Вы даете специальное разрешение на это, или это требуется для проведения судебного или иного государственного расследования.</p>
+            <p><p>Мы ответственно относимся к вопросу конфиденциальности сведений, полученных в связи с Вашим обращением.
+			Мы гарантируем, что любые данные, полученные от Вас, не будут разглашены или использованы в иных целях, кроме как для работы в ходе нашего совместного проекта. 
+			<span><a href="/personal">Oб использовании персональных данных</a></span>
+			</p>
           </div>
 		  <div class="form_status"> </div>
         </div>
@@ -725,16 +436,21 @@
                 <div class="form-group">
                   <button type="submit" class="btn btn-submit">Отправить</button>
                 </div>
+                <div class="form-group">
+                  <span>Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», 
+				  на условиях и для целей, определенных в Согласии на обработку персональных данных</span>
+                </div>
+				
               </form>   
             </div>
             <div class="col-sm-6">
               <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                <p>Напишите сообщение или заказ на подушку goodnite.</p>
+                <p>ООО «СКС»</p>
                 <ul class="address">
-                  <li><i class="fas fa-map-marker"></i> <span> Адрес:</span> 195273, Россия, Санкт-Петербург, Пискаревский пр. 63, лит. А</li>
-                  <li><i class="fas fa-phone"></i> <span> Телефон:</span> 8 800 290-50-60 </li>
-                  <li><i class="fas fa-envelope"></i> <span> Email:</span><a href="mailto:info@mygoodnite.ru"> info@mygoodnite.ru</a></li>
-                  <li><i class="fas fa-globe"></i> <span> Website:</span> <a href="https://www.mygoodnite.ru"> www.mygoodnite.ru</a></li>
+                  <li><i class="fas fa-map-marker"></i> <span> Адрес:</span> 196084, Санкт-Петербург, Измайловский пр., д. 2</li>
+                  <li><i class="fas fa-phone"></i> <span> Телефон:</span> 8 (800) 201-25-59 </li>
+                  <li><i class="fas fa-envelope"></i> <span> Email:</span><a href="mailto:info@scs.spb.ru">  info@scs.spb.ru</a></li>
+                  <li><i class="fas fa-globe"></i> <span> Website:</span> <a href="http://scs.spb.ru"> scs.spb.ru</a></li>
                 </ul>
               </div>                            
             </div>
@@ -748,52 +464,48 @@
   <footer id="footer">
     <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
       <div class="container">
-        <div class="row"> 
-          <div class="col-sm-3 col-lg-4">
-				<div class="footer-logo">
-					<img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/goodnite-logo-dark-140.png" style="border-radius: 5px;" alt="logo">				
-				</div>
+        <div class="row equal"> 
+          <div class="col-sm-6 col-lg-3">
+              <div class="single-footer">
+				<ul class="footer-menu">
+                <li><i class="fas fa-phone"></i> 8 (800) 201-25-59 </li> 
+                <li><i class="fas fa-envelope"></i> info@scs.spb.ru </li>
+                </ul>
+              </div>
 		  </div>
-          <div class="col-sm-6 col-lg-4">
-				<div class="footer-logo">
-					<a href="/"><img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/nitetronic-LOGO_header_transparent.png" alt="nitetronic logo" style="margin: auto;"></a>
-				</div>
+          <div class="col-sm-6 col-lg-3 wow fadeInRight animated">
+              <div class="single-footer">
+				<ul class="footer-menu">
+                <li><a href="/category/ppoekty">Проекты</a></li> 
+                <li><a href="/category/novosti">Новости</a></li> 
+                <li><a href="/blog">Блог</a></li> 
+                </ul>
+              </div>
 		  </div>
-          <div class="col-sm-3 col-lg-4">
-				<div class="footer-logo">
-				<img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/german-border.png" alt="Разработано в Германии" style="margin: auto;">
-				<div class="centered">Разработано в Германии</div>
-				</div>
+          <div class="col-sm-6 col-lg-3 wow fadeInRight animated">
+              <div class="single-footer">
+				<ul class="footer-menu">
+                <li><a href="/contact">Контакты</a></li> 
+                <li><a href="/review">Отзывы</a></li> 
+                <li><a href="/licenses">Лицензии</a></li> 
+                <li><a href="/vacancy">Вакансии</a></li> 
+                </ul>
+              </div>
+		  </div>
+          <div class="col-sm-6 col-lg-3">
+              <div class="single-footer">
+				<ul class="footer-menu">
+				<li>				
+					<div class="footer-logo">
+						<img class="img-responsive" src="http://scs.spb.ru/themes/my/assets/images/logo_scs_44.gif" style="border-radius: 5px;" alt="logo">					
+					</div>
+				</li> 
+                <li>&copy; 1998-2019 СКС.</li> 
+                </ul>
+              </div>
 		  </div>
   	    </div>
-        <div class="row"> 
-          <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
-		  
-			<div class="social-icons">
-			<ul>
-				<li><a class="envelope" href="mailto:info@mygoodnite.ru"><i class="fas fa-envelope"></i></a></li>
-				<li><a href=https://www.facebook.com data-toggle="tooltip" title="Goodnite Facebook: @nitetronic.goodnite"><i class="fab fa-facebook"></i></a></li>
-				<li><a href=https://twitter.com data-toggle="tooltip" title="Goodnite Twitter: @GOODNITERU"><i class="fab fa-twitter"></i></a></li>
-				<li><a href=https://vk.com data-toggle="tooltip" title="Goodnite ВКонтакте: vk.com/public174639310"><i class="fab fa-vk"></i></a></li>
-				<li><a class="skype" href="#" data-toggle="tooltip" title="GOODNITE Skype ID: "><i class="fab fab fa-skype"></i></a></li>
-				<li><a class="whatsapp" href="#" data-toggle="tooltip" title="GOODNITE WhatsApp: 8 800 290-50-60"><i class="fab fa-whatsapp"></i></a></li>
-			</ul>
-			</div>
-		  </div>
-      </div>
 	  </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <p>&copy; 2018-2019 MyGoodnite. Smart-подушка от храпа.</p>
-          </div>
-          <div class="col-sm-6">
-            <p class="pull-right">Разработка <a href="http://scs.spb.ru/">#MYGOODNITE</a></p>
-          </div>
-        </div>
-      </div>
     </div>
   </footer>
 

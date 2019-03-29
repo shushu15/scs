@@ -23,7 +23,9 @@ strong  {
 #about-us .lead {
 		border-color: #F7551D;
 }
- #footer ul li a:hover {
+
+#projects .member-info a:hover ,
+#footer ul li a:hover {
 		color: #F7551D;
 }
 

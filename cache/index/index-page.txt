@@ -1,1 +1,1 @@
-a:0:{}
+a:4:{i:0;s:26:"content/static/personal.md";i:1;s:25:"content/static/vacancy.md";i:2;s:24:"content/static/review.md";i:3;s:26:"content/static/licenses.md";}

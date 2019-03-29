@@ -64,45 +64,6 @@
 		return false;
 	});
 	
-	/*
-	// Carousel events
-	$(document).ready(function(){
-		$('#home-slider').on('slide.bs.carousel', function () {
-			// This variable contains all kinds of data and methods related to the carousel
-				var carouselData = $(this).data('bs.carousel');
-				var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
-				var total = carouselData.$items.length;
-				var currentItem = carouselData.$element.find('.item.active');
-				var animatedIts = currentItem[0].getElementsByClassName("animated");  // find all animated tags inside
-				var lastAttr, wipeClass;
-				for (var i = 0; i < animatedIts.length && animatedIts[i] != undefined; i++) {
-					wipeClass = animatedIts[i].getAttribute('data-animation-wipe');		
-					lastAttr = animatedIts[i].getAttribute('class');		// store class
-					animatedIts[i].setAttribute('class', wipeClass );
-					animatedIts[i].setAttribute('data-animation-wipe', lastAttr );
-					animatedIts[i].addEventListener("webkitAnimationEnd", animationToggle(animatedIts[i]));
-					animatedIts[i].addEventListener("animationend", animationToggle(animatedIts[i]));
-				
-				}
-
-  // Create the text we want to display.
-  // We increment the index because humans don't count like machines
-  var text = (currentIndex + 1) + " of " + total;
-
-  // You have to create a HTML element <div id="carousel-index"></div>
-  // under your carousel to make this work
-  $('#carousel-index').text(text);			
-	});
-	});
-	
-	function animationToggle(obj) {
-			var storeClass = obj.getAttribute('data-animation-wipe');		
-			obj.setAttribute('data-animation-wipe', obj.getAttribute('class')); 
-			obj.setAttribute('class', storeClass );
-			obj.removeEventListener("webkitAnimationEnd", animationToggle);
-			obj.removeEventListener("animationend", animationToggle);
-}
-*/
 	
 	// User define function
 	function Scroll() {
@@ -280,40 +241,7 @@
 	});
 
 	
-	// Purchase form
-	$('#purchase-form').submit(function(event){
-		event.preventDefault();
-		// Serialize the form data.
-		var form = $(this);
-		var formData = form.serializeArray(); 
-		
-		var form_status = $('div.form_purchase_status');
-		$.ajax({
-			async: true,
-			cache: false,
-			type: 'POST', 
-			url:  form.attr('action'),
-			data: formData, 
-			beforeSend: function(){
-				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Заказ отправляется...</p>').fadeIn() );
-			},
-			success: function(response) { //Данные отправлены успешно
-				form_status.html('<p class="text-success">Спасибо за заказ. В ближайшее время мы свяжемся с Вами</p>').delay(3000).fadeOut();
-				$('#message').val(''); 
-				setTimeout(function() { 
-					$("#purchase_close").trigger('click');
-				}, 3000);
-			},
-			error: function(response) { // Данные не отправлены
-				if (response.responseText !== '') {
-					form_status.html('<p class="text-warning">${response.responseText}</p>').delay(3000).fadeOut();
-				} else {
-					form_status.html('<p class="text-warning">Опс! Что-то пошло не так и нам не удалось доставить ваше сообщение.</p>').delay(3000).fadeOut();
-				}
-			}			
-		})
-	});
-	
+
 	//Google Map
 	/*** switched off
 	var latitude = $('#google-map').data('latitude')

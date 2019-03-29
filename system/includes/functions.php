@@ -558,10 +558,10 @@ function default_category()
 
     $desc->title = i18n("Uncategorized");
     $desc->url = site_url() . 'category/uncategorized';
-    $desc->body = '<p>Topics that don&#39;t need a category, or don&#39;t fit into any other existing category.</p>';
-
-    $desc->description = 'Topics that don&#39;t need a category, or don&#39;t fit into any other existing category.';
-
+    //$desc->body = '<p>Topics that don&#39;t need a category, or don&#39;t fit into any other existing category.</p>';
+    $desc->body = '<p>' . i18n("Uncategorized_comment") . '</p>';
+    //$desc->description = 'Topics that don&#39;t need a category, or don&#39;t fit into any other existing category.';
+	$desc->description = i18n("Uncategorized_comment");
     return $tmp[] = $desc;
 }
 
@@ -1186,7 +1186,7 @@ function recent_posts($custom = null, $count = null)
             echo '<li><a href="' . $post->url . '">' . $post->title . '</a></li>';
         }
         if (empty($posts)) {
-            echo '<li>No recent posts found</li>';
+            echo '<li>' . i18n("No_recent_posts") . '</li>';
         }
         echo '</ul>';
     }
@@ -1305,14 +1305,14 @@ function popular_posts($custom = null, $count = null)
                     }
                 } else {
                     if(empty($custom)) {
-                        echo '<ul><li>No popular posts found</li></ul>';
+                        echo '<ul><li>' . i18n("No popular posts found") . '</li></ul>';
                     } else {
                         return $tmp;
                     }
                 } 
             } else {
                 if (empty($custom)) {
-                    echo '<ul><li>No popular posts found</li></ul>';
+                    echo '<ul><li>' . i18n("No popular posts found") . '</li></ul>';
                 } else {
                     return $tmp;
                 }
@@ -1320,7 +1320,7 @@ function popular_posts($custom = null, $count = null)
         }
     } else {
         if (empty($custom)) {
-            echo '<ul><li>No popular posts found</li></ul>';
+            echo '<ul><li>' . i18n("No popular posts found") . '</li></ul>';
         } else {
             return $tmp;
         }
@@ -1758,29 +1758,65 @@ function get_thumbnail($text, $url = null)
     }
 }
 
+//shu - to pass post also
 // Get image from post and Youtube thumbnail.
 function get_image($text)
 {
-    libxml_use_internal_errors(true);
-    $dom = new DOMDocument();
-    $dom->loadHtml($text);
-    $imgTags = $dom->getElementsByTagName('img');
-    $vidTags = $dom->getElementsByTagName('iframe');
-    if ($imgTags->length > 0) {
-        $imgElement = $imgTags->item(0);
-        $imgSource = $imgElement->getAttribute('src');
-        return $imgSource;
-    } elseif ($vidTags->length > 0) {
-        $vidElement = $vidTags->item(0);
-        $vidSource = $vidElement->getAttribute('src');
-        $fetch = explode("embed/", $vidSource);
-        if (isset($fetch[1])) {
-            $vidThumb = '//img.youtube.com/vi/' . $fetch[1] . '/sddefault.jpg';
-            return $vidThumb;
-        }
-    } else{
-	   return false;
-    }
+	$thumbnail_name = 'mqdefault.jpg';
+	
+	if (is_string($text)) {  // as befroe
+		libxml_use_internal_errors(true);
+		$dom = new DOMDocument();
+		$dom->loadHtml($text);
+		$imgTags = $dom->getElementsByTagName('img');
+		$vidTags = $dom->getElementsByTagName('iframe');
+		if ($imgTags->length > 0) {
+			$imgElement = $imgTags->item(0);
+			$imgSource = $imgElement->getAttribute('src');
+			return $imgSource;
+		} elseif ($vidTags->length > 0) {
+			$vidElement = $vidTags->item(0);
+			$vidSource = $vidElement->getAttribute('src');
+			$fetch = explode("embed/", $vidSource);
+			if (isset($fetch[1])) {
+				$vidThumb = '//img.youtube.com/vi/' . $fetch[1] . '/' . $thumbnail_name;
+				return $vidThumb;
+			}
+		} else {
+			return false; 
+		}
+	} else {  // whole post passed
+		$post = $text;
+		//error_log("***POST_TYPE=" . $post->type); 
+		if (!empty($post->video)) {
+			$vidThumb = '//img.youtube.com/vi/' . $post->video . '/' . $thumbnail_name;
+			return $vidThumb;
+		} else if (!empty($post->image)) {
+			return $post->image;
+		} else {
+			libxml_use_internal_errors(true);
+			$textb = $post->body;
+			$dom = new DOMDocument();
+			$dom->loadHtml($textb);
+			$imgTags = $dom->getElementsByTagName('img');
+			$vidTags = $dom->getElementsByTagName('iframe');
+			if ($imgTags->length > 0) {
+				$imgElement = $imgTags->item(0);
+				$imgSource = $imgElement->getAttribute('src');
+				return $imgSource;
+			} elseif ($vidTags->length > 0) {
+				$vidElement = $vidTags->item(0);
+				$vidSource = $vidElement->getAttribute('src');
+				$fetch = explode("embed/", $vidSource);
+				if (isset($fetch[1])) {
+					$vidThumb = '//img.youtube.com/vi/' . $fetch[1] . '/' . $thumbnail_name;
+					return $vidThumb;
+				}
+			} else {
+				return false; 
+			}
+		}
+	}
 }
 
 // Return edit tab on post
@@ -2180,6 +2216,7 @@ function not_found()
     die();
 }
 
+
 // Turn an array of posts into an RSS feed
 function generate_rss($posts)
 {
@@ -2191,6 +2228,7 @@ function generate_rss($posts)
         ->title(blog_title())
         ->description(blog_description())
         ->url(site_url())
+		->language(config('language')) 		
         ->appendTo($feed);
 
     foreach ($posts as $p) {
@@ -2927,6 +2965,8 @@ function get_youtube_id($url)
     }
 
     preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:m\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $url, $matches);
+//	error_log("***URL***=" . $url . "***");
+//	error_log("***MATCHES***=" . implode('#', $matches) . "***");
 
     return $matches[1];
 }
@@ -3200,4 +3240,17 @@ function replace_href($string, $tag, $class, $url)
     
     return preg_replace('~<(?:!DOCTYPE|/?(?:html|head|body))[^>]*>\s*~i', '', utf8_decode($doc->saveHTML($doc->documentElement)));
 
+}
+
+function cl_print_r ($var, $label = '')
+{
+	$str = json_encode(print_r ($var, true));
+	echo "<script>console.group('".$label."');console.log('".$str."');console.groupEnd();</script>";
+}
+function cl_var_dump ($var, $label = '')
+{
+	ob_start();
+	var_dump($var);
+	$result = json_encode(ob_get_clean());
+	echo "<script>console.group('".$label."');console.log('".$result."');console.groupEnd();</script>";
 }

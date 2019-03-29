@@ -1,5 +1,9 @@
 <?php
 
+ini_set('error_reporting', E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1); 
+
 // Load the configuration file
 config('source', $config_file);
 
@@ -7,11 +11,16 @@ config('source', $config_file);
 if ( config('language') === "de" ) {
   i18n('source', 'lang/lang-de.ini'); // Load the German language file
   $date_format = '%d. %B %Y';  // Date format German style
-  setlocale(LC_TIME, 'de_DE', 'de_DE.utf8', "German");  // Change time format to German
-} else {  // Default: English ("en")
+  config("lang.charset". setlocale(LC_TIME, 'de_DE', 'de_DE.utf8', "German"));  // Change time format to German
+} else if ( config('language') === "en" ) {  // English ("en")
   i18n('source', 'lang/lang-en.ini'); // Load the English language file
   $date_format = '%B %d, %Y';  // Date format English style
-  setlocale(LC_TIME, 'en_US', 'en_US.utf8', "English"); // Change time format to English
+  config("lang.charset",setlocale(LC_TIME, 'en_US', 'en_US.utf8', "English")); // Change time format to English
+} else { // Default: Russian  ("ru")
+  i18n('source', 'lang/lang-ru.ini'); // Load the English language file
+  $date_format = '%d %B %Y';  // Date format Russian style
+  config("lang.charset",setlocale(LC_TIME, 'ru_RU.utf8', 'ru_RU', 'ru', "Russian"));  // Change time format to Russian
+  //var_dump(setlocale(LC_TIME, 'ru_RU.utf8', 'ru_RU', 'ru', "Russian"));
 }
 
 // Set the timezone
@@ -37,6 +46,8 @@ get('/index', function () {
     $vroot = rtrim(config('views.root'), '/');
     
     $lt = $vroot . '/layout--front.html.php'; 
+
+	
     if (file_exists($lt)) {
         $layout = 'layout--front';
     } else {
@@ -1893,7 +1904,7 @@ get('/api/json', function () {
 // Show the RSS feed
 get('/feed/rss', function () {
 
-    header('Content-Type: application/rss+xml');
+    header('Content-Type: application/rss+xml; charset=utf-8');
 
     // Show an RSS feed with the 30 latest posts
     echo generate_rss(get_posts(null, 1, config('rss.count')));
@@ -1981,7 +1992,7 @@ get('/post/:name', function ($name) {
     }
     
     if (config('blog.enable') === 'true') {
-        $blog = ' <span typeof="v:Breadcrumb"><a property="v:title" rel="v:url" href="' . site_url() . 'blog">Blog</a></span> &#187; ';
+        $blog = ' <span typeof="v:Breadcrumb"><a property="v:title" rel="v:url" href="' . site_url() . 'blog">'.i18n('Blog').'</a></span> &#187; ';
     } else {
         $blog = '';
     }
@@ -3279,7 +3290,7 @@ post('/:year/:month/:name/delete', function () {
 // If we get here, it means that
 // nothing has been matched above
 get('.*', function () {
-    not_found();
+    //not_found();
 });
 
 // Serve the blog

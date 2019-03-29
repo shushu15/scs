@@ -468,11 +468,6 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 }
 */
 
-#advantage {
-  background-image: url(../images/bg-pillow-ezhik.jpg);
-  padding: 60px 0;
-}
-
 .service-icon {
   border-radius: 4px;
   color: #fff;
@@ -533,6 +528,7 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 }
 #about-us .about-info {
 	background-color: #eee;
+	padding: 15px;
 }
 
 
@@ -568,7 +564,7 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
   padding-top: 0;
 }
 
-#projects .projects-members {
+.projects-members {
   margin-bottom: 25px;
 }
 
@@ -597,16 +593,25 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
   background-color: #ff6b00;
 }
 
-#projects .img-responsive {
+.projects-members .img-responsive {
   width: 100%;
 }
 
-#projects .member-info h3 {
+.projects-members .member-info h3 {
   margin-top: 0px;
   padding: 20px 5px;
   color: white;
   text-align: center;
   
+}
+
+#projects .member-info a {
+  color: #fff;
+}
+
+.navbar-right li.active a {
+  background-color: rgba(0,0,0,.2);
+  border-bottom: 5px solid;
 }
 
 #projects .member-info h4 {
