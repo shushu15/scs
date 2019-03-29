@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>This page doesn't exist! - СКС: системы электроснабжения, телекоммуникации и компьютерные технологии</title>
-  <meta name="description" content="404 Not Found"/>
-  <link rel="canonical" href="http://scs.spb.ru/" />
+  <title>Электроснабжение - СКС: системы электроснабжения, телекоммуникации и компьютерные технологии</title>
+  <meta name="description" content="Электроснабжение - специализации компании СКС С-Петербург"/>
+  <link rel="canonical" href="http://scs.spb.ru/electro" />
   <meta name="author" content="СКС">
   <link href="http://scs.spb.ru/themes/my/assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="http://scs.spb.ru/themes/my/assets/css/animate.min.css" rel="stylesheet"> 
@@ -17,12 +17,15 @@
   <link href="http://scs.spb.ru/themes/my/assets/css/responsive.css" rel="stylesheet">
 
   <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
   <link rel="shortcut icon" href="http://scs.spb.ru/themes/my/assets/images/favicon.ico">
-  <link rel="apple-touch-icon" sizes="120x120" href="http://scs.spb.ru/themes/my/assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://scs.spb.ru/themes/my/assets/images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://scs.spb.ru/themes/my/assets/images/apple-icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="144x144"  href="http://scs.spb.ru/themes/my/assets/images/android-icon-144x144.png">
   <link rel="icon" type="image/png" sizes="32x32" href="http://scs.spb.ru/themes/my/assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="http://scs.spb.ru/themes/my/assets/images/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="http://scs.spb.ru/themes/my/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileImage" content="http://scs.spb.ru/themes/my/assets/images/ms-icon-144x144.png">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">  
 
@@ -174,37 +177,61 @@
       </div>
     </div><!--/#main-nav-->
   </header> <!--/#home-->
-	
-    <!-- Set your background image for this header on the line below. -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                                                                                                                                                                                                                                <div class="site-heading">
-                            <h1>Error 404!</h1>
-                            <hr class="small">
-                            <span class="subheading">инженерные системы, инженерные сети, электроснабжение, системы безопасности, системы отопления, охранно пожарная сигнализация, умный дом</span>
-                        </div>
-                                                                                    <div class="breadcrumb "><a href="http://scs.spb.ru/">Главная</a> &#187; 404 Not Found</div>
-                                    </div>
-            </div>
-        </div>
-	
-  </header> <!--/#home-->
-	
-	
 
-	
-	
+
+    <!-- Post Content -->
+                 
+                <section id="page-content">
     <div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <p>Такой страницы нет или удалена. Воспользуйтесь поиском по сайту или заходите на главную страницу <a href="http://scs.spb.ru/">СКС </a> - инженерные системы.</p>
-                <form id="search-form" method="get">
-        <input type="text" class="search-input" name="search" value="Поиск" onfocus="if (this.value == 'Поиск') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Поиск';}">
-        <input type="submit" value="Поиск" class="search-button">
-    </form>        </div>
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="row">
+          <div class="text-center col-sm-8 col-sm-offset-2">
+                <h1>Электроснабжение</h1>
+          </div>
+        </div> 
+      </div>
+      <div class="row">
+      
+        <p>Cпециалисты компании «СКС» осуществляют проектирование и монтаж внутреннего электроснабжения (до 10 кВ) жилых зданий и промышленных предприятий. 
+        Результатом нашей работы является формирование электрических сетей строительного объекта, средств их эксплуатации и управления. 
+        Главная задача, которая ставится на этапе проектирования электроснабжения - обеспечить высокую надежность снабжения потребителей электрической энергией в необходимых размерах с наименьшими затратами. 
+        </p><p>
+
+        Упрощенно, в системах внутреннего электроснабжения предприятий можно выделить следующие компоненты:
+        </p>
+        <ul>
+            <li><strong>ГРЩ.</strong> В здании монтируется главный распределительный щит (ГРЩ). Для обеспечения высокой надежности электрики, в устройстве производится 
+                секционирование вводов и устанавливается связь с устройством автоматического включения резерва.</li>
+            <li><strong>Силовое оборудование.</strong> Объект обеспечивается распределительными пунктами. Они комплектуются автоматическими выключателями и выключателями нагрузки. 
+                Для каждого участка здания электрооборудование выбирается отдельно, т.к. степень электробезопасности помещений зависит от категории их среды.</li>
+            <li><strong>Электроосвещение.</strong> Освещение в зданиях подразделяется на рабочее, аварийное и дежурное. 
+                На этапе проектирования электроснабжения наши специалисты рассчитывают качественные показатели светильников, такие как освещенность и мощность. 
+                Выбор осветительных приборов также зависит от условий среды помещения и способу установки.</li>
+            <li><strong>Заземление.</strong> Все потребители электрики в здании должны быть заземлены. Обычно эта задача решается установкой защитного или функционального контура заземления. 
+                В ГРЩ монтируются заземляющие шины, которые подключаются к независимым контурам заземления.</li>
+            <li><strong>Молниезащита.</strong> Удары молний – частая причина пожаров в зданиях. Для противодействия опасности, на предприятии устанавливается система молниезащиты. 
+                Различные варианты инженерных решений позволяют добиться гарантированной безопасности.</li>
+            <li><strong>Уравнивание потенциалов.</strong> Для полной электробезопасности здания, в его электрических сетях выполняется электрическое соединение проводящих частей для равенства их потенциалов. </li>
+        </ul>
+        <p>
+        Компания «СКС» имеет огромный опыт работы по обеспечению зданий и сооружений надежными системами электроснабжения. Высокая квалификация работы поддерживается от проектирования и монтажа до сдачи в эксплуатацию.
+        </p>
+        
+       </div>
+
     </div>
-</div>    <hr>
+  </section>
+
+<!--/#page-content-->
+				<div class="toolbox">
+                    <span class="share pull-right">
+                        <a target="_blank" class="first" href="https://www.facebook.com/sharer.php?u=http://scs.spb.ru/electro&t=Электроснабжение"><i class="fab fa-facebook fa-lg"></i></a> 
+                        <a target="_blank" href="https://twitter.com/share?url=http://scs.spb.ru/electro&text=Электроснабжение"><i class="fab fa-twitter fa-lg"></i></a> 
+                        <a target="_blank" href="http://vk.com/share.php?url=http://scs.spb.ru/electro&title=Электроснабжение&noparse=true"><i class="fab fa-vk fa-lg"></i></a> 
+                        <a target="_blank" href="https://plus.google.com/share?url=http://scs.spb.ru/electro"><i class="fab fa-google-plus fa-lg"></i></a> 
+                        <a target="_blank" class="last" href="http://pinterest.com/pin/create/button/?url=http://scs.spb.ru/electro"><i class="fab fa-pinterest fa-lg"></i></a> 
+                    </span>
+                </div>    <hr>
 	
 	
   <footer id="footer">

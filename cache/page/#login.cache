@@ -27,7 +27,7 @@
     <div id="menu-wrapper">
         <div class="container">
             <nav id="menu">
-                <ul class="nav "><li class="item first"><a href="http://scs.spb.ru/">Главная</a></li><li class="item"><a href="http://scs.spb.ru/blog">Blog</a></li><li class="item"><a href="http://scs.spb.ru/licenses">Лицензии</a></li><li class="item"><a href="http://scs.spb.ru/personal">Обработка персональных данных</a></li><li class="item"><a href="http://scs.spb.ru/review">Отзывы наших клиентов</a></li><li class="item last"><a href="http://scs.spb.ru/vacancy">Вакансии компании СКС С-Петербург</a></li></ul>                    <form id="search-form" method="get">
+                <ul class="nav "><li class="item first"><a href="http://scs.spb.ru/">Главная</a></li><li class="item"><a href="http://scs.spb.ru/blog">Blog</a></li><li class="item"><a href="http://scs.spb.ru/automatics">Автоматика и диспетчеризация</a></li><li class="item"><a href="http://scs.spb.ru/elboxes">Производство электрощитового оборудования</a></li><li class="item"><a href="http://scs.spb.ru/electro">Электроснабжение</a></li><li class="item"><a href="http://scs.spb.ru/fireguard">Системы противопожарной защиты</a></li><li class="item"><a href="http://scs.spb.ru/licenses">Лицензии</a></li><li class="item"><a href="http://scs.spb.ru/personal">Обработка персональных данных</a></li><li class="item"><a href="http://scs.spb.ru/review">Отзывы наших клиентов</a></li><li class="item"><a href="http://scs.spb.ru/security">Системы безопасности</a></li><li class="item"><a href="http://scs.spb.ru/telecommunication">Телекоммуникационные системы</a></li><li class="item"><a href="http://scs.spb.ru/vacancy">Вакансии компании СКС С-Петербург</a></li><li class="item last"><a href="http://scs.spb.ru/water">Системы отопления и водоснабжения</a></li></ul>                    <form id="search-form" method="get">
         <input type="text" class="search-input" name="search" value="Поиск" onfocus="if (this.value == 'Поиск') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Поиск';}">
         <input type="submit" value="Поиск" class="search-button">
     </form>            </nav>
@@ -52,7 +52,7 @@
         <input type="text" class="" name="user"/><br><br>
         Password <span class="required">*</span> <br>
         <input type="password" class="" name="password"/><br><br>
-        <input type="hidden" name="csrf_token" value="f19f8caa05af1a58635c0458c1288acc0bf586cd">
+        <input type="hidden" name="csrf_token" value="a006f4878be847329c72ff49a7058a6b4d7070d2">
                 <input type="submit" name="submit" value="Login"/>
     </form>            </section>
         </div>

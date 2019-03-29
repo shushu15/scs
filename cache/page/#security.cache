@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>This page doesn't exist! - СКС: системы электроснабжения, телекоммуникации и компьютерные технологии</title>
-  <meta name="description" content="404 Not Found"/>
-  <link rel="canonical" href="http://scs.spb.ru/" />
+  <title>Системы безопасности - СКС: системы электроснабжения, телекоммуникации и компьютерные технологии</title>
+  <meta name="description" content="Системы безопасности - специализации компании СКС С-Петербург"/>
+  <link rel="canonical" href="http://scs.spb.ru/security" />
   <meta name="author" content="СКС">
   <link href="http://scs.spb.ru/themes/my/assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="http://scs.spb.ru/themes/my/assets/css/animate.min.css" rel="stylesheet"> 
@@ -17,12 +17,15 @@
   <link href="http://scs.spb.ru/themes/my/assets/css/responsive.css" rel="stylesheet">
 
   <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
   <link rel="shortcut icon" href="http://scs.spb.ru/themes/my/assets/images/favicon.ico">
-  <link rel="apple-touch-icon" sizes="120x120" href="http://scs.spb.ru/themes/my/assets/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://scs.spb.ru/themes/my/assets/images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://scs.spb.ru/themes/my/assets/images/apple-icon-72x72.png">
+  <link rel="icon" type="image/png" sizes="144x144"  href="http://scs.spb.ru/themes/my/assets/images/android-icon-144x144.png">
   <link rel="icon" type="image/png" sizes="32x32" href="http://scs.spb.ru/themes/my/assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="http://scs.spb.ru/themes/my/assets/images/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="http://scs.spb.ru/themes/my/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileImage" content="http://scs.spb.ru/themes/my/assets/images/ms-icon-144x144.png">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">  
 
@@ -49,7 +52,7 @@
 
     <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
       <div class="carousel-inner">
-		<!-- Indicators -->
+		<!-- Indicators 
 		<ol class="carousel-indicators">
 			<li data-target="#home-slider" data-slide-to="0" class="active"></li>
 			<li data-target="#home-slider" data-slide-to="1"></li>
@@ -59,13 +62,13 @@
 			<li data-target="#home-slider" data-slide-to="5"></li>
 			<li data-target="#home-slider" data-slide-to="6"></li>
 			<li data-target="#home-slider" data-slide-to="7"></li>
-		</ol>
+		</ol> -->
         <div class="item active slide1" >
           <div class="picture">
 		  </div>
           <div class="caption">
             <h1 class="animated bounceIn" data-animation-wipe="animated bounceOut">Инженерные системы</h1>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#about-us" data-animation-wipe="btn btn-start animated fadeOut">посмотреть</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/#about-us" data-animation-wipe="btn btn-start animated fadeOut">посмотреть</a>
           </div>
         </div>
         <div class="item slide2">
@@ -74,7 +77,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceIn" data-animation-wipe="animated bounceOut">Электроснабжение</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services" data-animation-wipe="btn btn-start animated fadeOut">а как это работает?</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/electro" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide3">
@@ -83,7 +86,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceIn" data-animation-wipe="animated bounceOut">Системы безопасности</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services" data-animation-wipe="btn btn-start animated fadeOut">а как это работает?</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/security" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide4" >
@@ -92,7 +95,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceInDown" data-animation-wipe="animated bounceOutDown">Системы противопожарной защиты</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/fireguard" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide5" >
@@ -101,7 +104,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceInDown" data-animation-wipe="animated bounceOutDown">Телекоммуникации</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/telecommunication" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide6" >
@@ -110,7 +113,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Автоматика и диспетчеризация</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/automatics" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide7" >
@@ -119,7 +122,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы отопления и водоснабжения</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#portfolio" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/water" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
       </div>
@@ -156,7 +159,7 @@
           <ul class="nav navbar-nav navbar-right">                 
             <li class="active"><a href="/#home"><i class="fas fa-home fa-lg"></i></a></li>
             <li><a href="/#about-us">О нас </a></li> 
-            <li><a href="/#projects">Проекты</a></li>
+            <li><a href="/category/ppoekty">Проекты</a></li>
             <li><a href="/#contact">Контакты</a></li> 
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v fa-lg"></i></a>
@@ -174,37 +177,79 @@
       </div>
     </div><!--/#main-nav-->
   </header> <!--/#home-->
-	
-    <!-- Set your background image for this header on the line below. -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                                                                                                                                                                                                                                <div class="site-heading">
-                            <h1>Error 404!</h1>
-                            <hr class="small">
-                            <span class="subheading">инженерные системы, инженерные сети, электроснабжение, системы безопасности, системы отопления, охранно пожарная сигнализация, умный дом</span>
-                        </div>
-                                                                                    <div class="breadcrumb "><a href="http://scs.spb.ru/">Главная</a> &#187; 404 Not Found</div>
-                                    </div>
-            </div>
-        </div>
-	
-  </header> <!--/#home-->
-	
-	
 
-	
-	
+
+    <!-- Post Content -->
+                 
+                <section id="page-content">
     <div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <p>Такой страницы нет или удалена. Воспользуйтесь поиском по сайту или заходите на главную страницу <a href="http://scs.spb.ru/">СКС </a> - инженерные системы.</p>
-                <form id="search-form" method="get">
-        <input type="text" class="search-input" name="search" value="Поиск" onfocus="if (this.value == 'Поиск') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Поиск';}">
-        <input type="submit" value="Поиск" class="search-button">
-    </form>        </div>
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="row">
+          <div class="text-center col-sm-8 col-sm-offset-2">
+                <h1>Системы безопасности</h1>
+          </div>
+        </div> 
+      </div>
+      <div class="row">
+        <p>
+        Специалисты компании «СКС» выполняют проектирование и монтаж систем безопасности для жилых зданий и промышленных предприятий. Традиционно эти системы разделяют на 3 группы.
+        </p><
+        <h2>Охранная и тревожная сигнализация</h2>
+        
+        <p>
+        Охранная сигнализация предназначена для своевременного оповещения о проникновении на охраняемую территорию и предупреждении попыток вторжения. 
+        Информация о срабатывании автоматически документируется на посту охраны, и при необходимости передается на пост центрального наблюдения. 
+        Тревожная сигнализация предназначена для подачи сигнала на пост охраны вручную в случае возникновения опасной ситуации.
+        </p><p>
+        Система состоит из следующих элементов: охранные датчики (мобильные и стационарно устанавливаемые), центральный контроллер (для обработки информации) и средства оповещения. 
+        К сетям охранной сигнализации возможно не только охранных извещателей, но и датчиков утечки воды, анализаторов газа (метан, пропан, СО) или других устройств бытового назначения.
+        </p>
+
+        <h2>Системы контроля и управления доступом (СКУД)</h2>
+
+        <p>
+        Основное назначение таких систем — разграничить перемещение людей между различными зонами доступности. 
+        СКУД выполняет мониторинг помещений охраняемого объекта для разграничения передвижений работников и запрета доступа нежелательным посетителям. 
+        Вместе с тем, она позволяет контролировать рабочее время сотрудников, учитывать их опоздания и прогулы. 
+        </p><p>
+        Для входа на территорию объекта используются устройства идентификации. 
+        Это могут быть электронные карты, брелки touch-memory или биометрические системы (распознавание по отпечатку пальца или радужной оболочки глаза). 
+        Препятствием на пути нежелательных посетителей служат исполнительные устройства: электронные замки, турникеты, калитки, шлагбаумы и др. 
+        </p>
+        
+        <h2>Видеонаблюдение</h2>
+
+        <p>
+        Системы видеонаблюдения осуществляют мониторинг и регистрацию происходящих на объекте событий, позволяют впоследствии посмотреть записанные видео и произвести их анализ. 
+        При монтаже выполняется комплексное программирование системы на оперативное реагирование при возникновении опасных ситуаций. 
+        </p><p>
+        Система состоит из видеокамер, устройств записи сигналов, записывающего оборудования, устройства вывода изображений и исполнительных устройств. 
+        Оборудование подбирается под каждый объект индивидуально. Для разных задач могут использоваться различные виды видеокамер: цветные и черно-белые, стационарные и управляемые, всепогодные, скрытые и др. 
+        </p><p>
+        Обычно передача видеосигналов выполняется по коаксиальному кабелю в аналоговом виде. 
+        В настоящее время получили распространение системы, в которых видеосигнал оцифровывается и передается на центральное оборудование с использованием выделенной локально-вычислительной сети. 
+        Такая технология позволяет существенно улучшить качество сигнала и избавиться от помех. 
+        </p>
+        <p>
+        В активах компании «СКС»  —  многолетний опыт работы сотрудников и инновационные решения для каждого конкретного объекта.
+        </p>
+
+
+       </div>
+
     </div>
-</div>    <hr>
+  </section>
+
+<!--/#page-content-->
+				<div class="toolbox">
+                    <span class="share pull-right">
+                        <a target="_blank" class="first" href="https://www.facebook.com/sharer.php?u=http://scs.spb.ru/security&t=Системы безопасности"><i class="fab fa-facebook fa-lg"></i></a> 
+                        <a target="_blank" href="https://twitter.com/share?url=http://scs.spb.ru/security&text=Системы безопасности"><i class="fab fa-twitter fa-lg"></i></a> 
+                        <a target="_blank" href="http://vk.com/share.php?url=http://scs.spb.ru/security&title=Системы безопасности&noparse=true"><i class="fab fa-vk fa-lg"></i></a> 
+                        <a target="_blank" href="https://plus.google.com/share?url=http://scs.spb.ru/security"><i class="fab fa-google-plus fa-lg"></i></a> 
+                        <a target="_blank" class="last" href="http://pinterest.com/pin/create/button/?url=http://scs.spb.ru/security"><i class="fab fa-pinterest fa-lg"></i></a> 
+                    </span>
+                </div>    <hr>
 	
 	
   <footer id="footer">
