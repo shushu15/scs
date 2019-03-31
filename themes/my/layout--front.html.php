@@ -327,7 +327,7 @@
       </div>
       <div class="projects-members">
         <div class="row">
-		<?php $lists = recent_posts(true, 6);?>
+		<?php $lists = featured_posts_tag('featured', true, 6);?>
 		<?php foreach ($lists as $l):?>
           <div class="col-sm-4">
             <div class="projects-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
