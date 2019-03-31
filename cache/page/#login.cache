@@ -52,7 +52,7 @@
         <input type="text" class="" name="user"/><br><br>
         Password <span class="required">*</span> <br>
         <input type="password" class="" name="password"/><br><br>
-        <input type="hidden" name="csrf_token" value="8b207aa3ea5839829e1aae334fa313f196d4566c">
+        <input type="hidden" name="csrf_token" value="d5f225d3d21a781c584c9aed3cb4008457d4359b">
                 <input type="submit" name="submit" value="Login"/>
     </form>            </section>
         </div>

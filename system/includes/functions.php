@@ -1193,7 +1193,7 @@ function recent_posts($custom = null, $count = null)
 }
 
 
-// Return recent posts lists
+// Return recent post with the specified tag
 function featured_posts_tag( $tag, $custom = null, $count = null)
 {
     if (empty($count)) {
@@ -1214,30 +1214,17 @@ function featured_posts_tag( $tag, $custom = null, $count = null)
         mkdir($dir, 0775, true);
     }
     
-	error_log("dir:" . $dir, 0);
-	
     if (file_exists($filename)) {
-		error_log($filename . " exits", 0);
         $posts = unserialize(file_get_contents($filename));
-		error_log($filename . " deserialized", 0);
         if (count($posts) != $count) {
 		    $posts = get_tag($tag, 1, $count, false);
-			error_log($filename . " tagged", 0);
-			error_log($filename . " postst", 0);
             $tmp = serialize($posts);
-			error_log($filename . " serialized", 0);
 			file_put_contents($filename, print_r($tmp, true));
-			error_log($filename . " cached", 0);
         }        
     } else {
-	   error_log($filename . " not exists", 0);
-	   $posts = get_tag($tag, 1, $count + 1, false);
-	   error_log($filename . " tagged", 0);
-    	error_log($filename . " posts got", 0);
+	   $posts = get_tag($tag, 1, $count, false);
        $tmp = serialize($posts);
-		error_log($filename . " serialized", 0);
        file_put_contents($filename, print_r($tmp, true));
-	    error_log($filename . " cached", 0);
     }
     
     if (!empty($custom)) {
@@ -1254,6 +1241,54 @@ function featured_posts_tag( $tag, $custom = null, $count = null)
         echo '</ul>';
     }
 }
+// Return recent post with the specified tag
+function featured_posts_category( $category, $custom = null, $count = null)
+{
+    if (empty($count)) {
+        $count = config('featured.count');
+        if (empty($count)) {
+            $count = 5;
+        }
+    }
+    
+    $dir = "cache/widget";
+    $filename = "cache/widget/#category#" . strtolower($category) . ".cache";
+    $tmp = array();
+    $posts = array();
+    
+	error_log("filename:" . $filename, 0);
+    if (is_dir($dir) === false) {
+        mkdir($dir, 0775, true);
+    }
+    
+    if (file_exists($filename)) {
+        $posts = unserialize(file_get_contents($filename));
+        if (count($posts) != $count) {
+		    $posts = get_category($category, 1, $count, false);
+            $tmp = serialize($posts);
+			file_put_contents($filename, print_r($tmp, true));
+        }        
+    } else {
+       $posts = get_category($category, 1, $count, false);
+       $tmp = serialize($posts);
+       file_put_contents($filename, print_r($tmp, true));
+    }
+    
+    if (!empty($custom)) {
+        return $posts;        
+    } else {
+    
+        echo '<ul>';
+        foreach ($posts as $post) {
+            echo '<li><a href="' . $post->url . '">' . $post->title . '</a></li>';
+        }
+        if (empty($posts)) {
+            echo '<li>' . i18n("No_recent_posts") . '</li>';
+        }
+        echo '</ul>';
+    }
+}
+
 // Return recent posts lists
 function recent_type($type, $custom = null, $count = null)
 {

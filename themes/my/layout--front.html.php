@@ -195,10 +195,10 @@
 				</div>
 			</div>
 			<div class="blog-posts">
-			<div class="row">
-				<?php $lists = recent_posts(true, 3);?>
+			<div class="row equal">
+				<?php $lists = featured_posts_category('novosti', true, 3);?>
 				<?php foreach ($lists as $l):?>
-					<div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+					<div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
 						<div class="post-thumb">
 							<a href="<?php echo $l->url;?>"><img class="img-responsive" src="<?php echo get_image($l);?>" alt="<?php echo shorten($l->title,80);?>"></a> 
 							<div class="post-icon">
@@ -212,10 +212,10 @@
 						<div class="entry-header">
 							<h3><a href="<?php echo $l->url;?>"><?php echo shorten($l->title,120);?></a></h3>
 							<span class="date"><?php echo date('d M Y', $l->date);?></span>
-							<span class="cetagory">в <strong><?php echo $l->category;?></strong></span>
+							<span class="category">в <strong><?php echo $l->category;?></strong></span>
 						</div>
 						<div class="entry-content">
-							<p><?php echo shorten($l->body, 200); ?>...</p>
+							<p><?php echo shorten($l->body, 300); ?>...</p>
 						</div>
 					</div>
 				<?php endforeach;?>
@@ -292,11 +292,11 @@
 				<h2>Почему мы</h2>
 			</div>
 		</div>
-      <div class="row count">
+      <div class="row equal">
         <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
 		  <i class="fas fa-birthday-cake"></i>
-          <h3 class="timer">15</h3>
-          <p>15 лет успешной работы</p>
+          <h3 class="timer">20</h3>
+          <p>20 лет успешной работы</p>
         </div>
         <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
           <i class="fas fa-hotel"></i>
@@ -326,10 +326,10 @@
         </div>
       </div>
       <div class="projects-members">
-        <div class="row">
-		<?php $lists = featured_posts_tag('featured', true, 6);?>
+        <div class="row equal">
+		<?php $lists = featured_posts_tag('featured', true, 3);?>
 		<?php foreach ($lists as $l):?>
-          <div class="col-sm-4">
+          <div class="col-xs-12 col-sm-4">
             <div class="projects-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
               <div class="member-image">
 				<a href="<?php echo $l->url;?>"><img class="img-responsive" src="<?php echo get_image($l);?>" alt="<?php echo shorten($l->title,80);?>"></a> 
@@ -407,7 +407,7 @@
               <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                 <p>ООО «СКС»</p>
                 <ul class="address">
-                  <li><i class="fas fa-map-marker"></i> <span> Адрес:</span> 196084, Санкт-Петербург, Измайловский пр., д. 2</li>
+                  <li><i class="fas fa-map-marker"></i> <span> Адрес:</span>  192029, Санкт-Петербург, ул. Ольминского, д.6</li>
                   <li><i class="fas fa-phone"></i> <span> Телефон:</span> <?php echo config('site.phone');?> </li>
                   <li><i class="fas fa-envelope"></i> <span> Email:</span><a href="mailto:<?php echo config('site.email');?>">  <?php echo config('site.email');?></a></li>
                   <li><i class="fas fa-globe"></i> <span> Website:</span> <a href="http://scs.spb.ru"> scs.spb.ru</a></li>
