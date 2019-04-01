@@ -216,7 +216,7 @@
           <div class="col-sm-6 col-lg-3 wow fadeInRight animated">
               <div class="single-footer">
 				<ul class="footer-menu">
-                <li><a href="/contact">Контакты</a></li> 
+                <li><a href="/#contact">Контакты</a></li> 
                 <li><a href="/review">Отзывы</a></li> 
                 <li><a href="/licenses">Лицензии</a></li> 
                 <li><a href="/vacancy">Вакансии</a></li> 

@@ -412,7 +412,10 @@
                   <li><i class="fas fa-envelope"></i> <span> Email:</span><a href="mailto:<?php echo config('site.email');?>">  <?php echo config('site.email');?></a></li>
                   <li><i class="fas fa-globe"></i> <span> Website:</span> <a href="http://scs.spb.ru"> scs.spb.ru</a></li>
                 </ul>
-              </div>                            
+              </div> 
+			  <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+					<a href="/themes/my/assets/images/map-contact.jpg" data-lightbox="map-contact"><img class="img-responsive" src="/themes/my/assets/images/map-contact-ava.jpg" alt="Карта расположения офиса СКС Спб."></a> 
+			  </div> 	
             </div>
           </div>
         </div>
@@ -445,7 +448,7 @@
           <div class="col-sm-6 col-lg-3 wow fadeInRight animated">
               <div class="single-footer">
 				<ul class="footer-menu">
-                <li><a href="/contact">Контакты</a></li> 
+                <li><a href="/#contact">Контакты</a></li> 
                 <li><a href="/review">Отзывы</a></li> 
                 <li><a href="/licenses">Лицензии</a></li> 
                 <li><a href="/vacancy">Вакансии</a></li> 
