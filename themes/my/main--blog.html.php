@@ -1,7 +1,5 @@
 <!-- Main Content -->
-<div class="container" id="content-body">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+	<div class="article" id="content-body">
         <?php if (config('category.info') === 'true'):?>
             <?php if (!empty($category)): ?>
                 <div class="category-info">
@@ -64,6 +62,4 @@
                 <?php endif;?>
             </ul>
         <?php endif; ?>
-        </div>
-    </div>
-</div>
+	</div>

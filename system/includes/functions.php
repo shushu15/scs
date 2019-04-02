@@ -1631,7 +1631,7 @@ function has_pagination($total, $perpage, $page = 1)
         $total = count(get_post_unsorted());
     }
     $totalPage = ceil($total / $perpage);
-    $number = 'Page '. $page . ' of ' . $totalPage;
+    $number = i18n('Page') .' '. $page . ' ' . i18n('Of') . ' '. $totalPage;
     $pager = get_pagination($page, $total, $perpage, 2);
     return array(
         'prev' => $page > 1,
@@ -1812,8 +1812,8 @@ function get_thumbnail($text, $url = null)
 
         $teaserType = config('teaser.type');
 
-        if (strlen(strip_tags($text)) > config('teaser.char') && $teaserType === 'trimmed') {
-
+ //       if (strlen(strip_tags($text)) > config('teaser.char') && $teaserType === 'trimmed') {
+       if ($teaserType === 'trimmed') {
             libxml_use_internal_errors(true);
             $default = config('default.thumbnail');
             $dom = new DOMDocument();

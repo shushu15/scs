@@ -43,6 +43,8 @@ $desc = get_category_info(null);
         Tag <span class="required">*</span>
         <br>
         <input type="text" class="text <?php if (isset($postTag)) { if (empty($postTag)) { echo 'error';}} ?>" name="tag" value="<?php if (isset($postTag)) { echo $postTag; } ?>"/>
+		<br>
+        <span class="help"><?php echo i18n('Admit.thru_comma');?>.</span>
         <br><br>
         Url (optional)<br><input type="text" class="text" name="url" value="<?php if (isset($postUrl)) { echo $postUrl;} ?>"/>
         <br>

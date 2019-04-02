@@ -85,7 +85,10 @@ if (config('permalink.type') == 'post') {
         </select> 
         <br><br>
         Tag <span class="required">*</span><br>
-        <input type="text" name="tag" class="text <?php if (isset($postTag)) { if (empty($postTag)) { echo 'error'; } } ?>" value="<?php echo $oldtag ?>"/><br><br>
+        <input type="text" name="tag" class="text <?php if (isset($postTag)) { if (empty($postTag)) { echo 'error'; } } ?>" value="<?php echo $oldtag ?>"/>
+		<br>
+        <span class="help"><?php echo i18n('Admit.thru_comma');?>.</span>
+		<br><br>
         Url (optional)<br>
         <input type="text" name="url" class="text" value="<?php echo $oldmd ?>"/>
         <br>

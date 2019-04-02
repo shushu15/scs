@@ -6,7 +6,8 @@ a,
 .single-table.featured .btn.btn-primary, 
 .contact-info ul li a:hover, 
 #footer .footer-bottom a,
-.breadcrumb a
+.breadcrumb a,
+.post-preview > a
 {
   color: #5e9ab2;
 }
