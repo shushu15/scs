@@ -43,14 +43,26 @@ strong  {
 .btn-submit:hover, 
 .navbar-right  > li > a:hover ,
 .dropdown-menu  > li > a:hover ,
-.our-services .col-sm-6:hover .service-icon 
+.our-services .col-sm-6:hover .service-icon ,
+.pager li > a:hover,
+.pager li > a:focus
 {
   background-color: #3D80A4;
 }
-a:hover, a:focus  {
+a:hover, a:focus,  
+.post-preview > a:hover,
+.post-preview > a:focus ,
+.post-preview > a:hover > .post-title,
+.post-preview > a:focus > .post-title ,
+.post-preview > .post-meta > a:hover,
+.post-preview > .post-meta > a:focus
+{
 	color: #3D80A4;
 }
-.header_top  {
+.header_top,
+.pager li > a:hover,
+.pager li > a:focus
+{
   border-color: #3D80A4;
 }
   

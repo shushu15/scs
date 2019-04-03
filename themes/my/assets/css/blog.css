@@ -1,10 +1,6 @@
-.post-preview > a {
-  color: #333;
-}
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0e9ac8;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -18,7 +14,6 @@
 }
 .post-preview > a:hover > .post-title,
 .post-preview > a:focus > .post-title { 
-  color: #0e9ac8;
   text-decoration: underline;
 }
 .post-preview > .post-meta {
@@ -40,7 +35,6 @@
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0e9ac8;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -81,7 +75,6 @@
 }
 .pager li > a,
 .pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
@@ -104,7 +97,6 @@
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0e9ac8;
   border: 1px solid #0e9ac8;
 }
 .pager .disabled > a,
@@ -125,7 +117,6 @@
   list-style: outside none none;
   margin-bottom: 20px;
   padding: 0px;
-  font-family: 'Lora', 'Times New Roman', serif;
   text-align:center;
 }
 

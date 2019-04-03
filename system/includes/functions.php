@@ -2900,7 +2900,7 @@ EOF;
     if ($role === 'admin') {
         echo '<li><a href="' . $base . 'admin/posts">' . i18n('Posts') . '</a></li>';
         if (config('views.counter') == 'true') {
-            echo '<li><a href="' . $base . 'admin/popular">Popular</a></li>';
+            echo '<li><a href="' . $base . 'admin/popular">' . i18n('Popular') . '</a></li>';
         }
     }
     echo '<li><a href="' . $base . 'admin/mine">' . i18n('Mine') . '</a></li>';

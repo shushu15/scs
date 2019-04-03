@@ -1774,7 +1774,7 @@ get('/archive/:req', function ($req) {
 
     $time = explode('-', $req);
     $date = strtotime($req);
-
+/*
     if (isset($time[0]) && isset($time[1]) && isset($time[2])) {
         $timestamp = date('d F Y', $date);
     } elseif (isset($time[0]) && isset($time[1])) {
@@ -1782,7 +1782,16 @@ get('/archive/:req', function ($req) {
     } else {
         $timestamp = $req;
     }
-    
+  */
+  
+    if (isset($time[0]) && isset($time[1]) && isset($time[2])) {
+        $timestamp = strftime('%d %B %Y', $date);
+    } elseif (isset($time[0]) && isset($time[1])) {
+        $timestamp = strftime('%B %Y', $date);
+    } else {
+        $timestamp = $req;
+    }
+  
     $tarchive = new stdClass;
     $tarchive->title = $timestamp;
 
@@ -1808,14 +1817,14 @@ get('/archive/:req', function ($req) {
     }
 
     render($pview, array(
-        'title' => 'Archive for: ' . $timestamp . ' - ' . blog_title(),
-        'description' => 'Archive page for: ' . $timestamp . ' on ' . blog_title() . '.',
+        'title' => i18n('Archive_for') .': ' . $timestamp . ' - ' . blog_title(),
+        'description' => i18n('Archive_page_for') . ': ' . $timestamp . ' on ' . blog_title() . '.',
         'canonical' => site_url() . 'archive/' . $req,
         'page' => $page,
         'posts' => $posts,
         'archive' => $tarchive,
         'bodyclass' => 'in-archive archive-' . strtolower($req),
-        'breadcrumb' => '<a href="' . site_url() . '">' . config('breadcrumb.home') . '</a> &#187; Archive for: ' . $timestamp,
+        'breadcrumb' => '<a href="' . site_url() . '">' . config('breadcrumb.home') . '</a> &#187; ' . i18n('Archive_for') . ': ' . $timestamp,
         'pagination' => has_pagination($total, $perpage, $page),
         'is_archive' => true,
     ), $layout);

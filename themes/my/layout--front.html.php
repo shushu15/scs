@@ -211,7 +211,7 @@
 						</div>
 						<div class="entry-header">
 							<h3><a href="<?php echo $l->url;?>"><?php echo shorten($l->title,120);?></a></h3>
-							<span class="date"><?php echo date('d M Y', $l->date);?></span>
+							<span class="date"><?php echo strftime('%d %b %Y', $l->date);?></span>
 							<span class="category">в <strong><?php echo $l->category;?></strong></span>
 						</div>
 						<div class="entry-content">
@@ -410,7 +410,7 @@
                   <li><i class="fas fa-map-marker"></i> <span> Адрес:</span>  192029, Санкт-Петербург, ул. Ольминского, д.6</li>
                   <li><i class="fas fa-phone"></i> <span> Телефон:</span> <?php echo config('site.phone');?> </li>
                   <li><i class="fas fa-envelope"></i> <span> Email:</span><a href="mailto:<?php echo config('site.email');?>">  <?php echo config('site.email');?></a></li>
-                  <li><i class="fas fa-globe"></i> <span> Website:</span> <a href="http://scs.spb.ru"> scs.spb.ru</a></li>
+                  <li><i class="fas fa-globe"></i> <span> Website:</span> <a href="<?php echo config('site.url');?>"> <?php $str = config('site.url'); $str = preg_replace('#^https?://#', '', $str); echo $str;?></a></li>
                 </ul>
               </div> 
 			  <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
