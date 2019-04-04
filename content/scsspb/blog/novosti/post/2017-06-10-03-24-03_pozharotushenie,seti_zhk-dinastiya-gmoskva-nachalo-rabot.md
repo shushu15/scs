@@ -6,4 +6,4 @@
 Приступаем к работам по проектированию слаботочных сетей и пожаротушения во втором этапе строительства жилого комплекса "Династия" (г.Москва)
 
 
-  [1]: http://scs.spb.ru/content/images/20190331032349-zk-dinastiya-moscow800-1.jpg
+  [1]: https://scs-spb.ru/content/images/20190331032349-zk-dinastiya-moscow800-1.jpg

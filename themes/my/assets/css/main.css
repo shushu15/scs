@@ -464,6 +464,11 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 **************************/
 
 /*************************
+********News CSS*******
+**************************/
+
+
+/*************************
 ********Service CSS*******
 **************************/
 /*
@@ -509,7 +514,7 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 ********About CSS*******
 **************************/
 #about-us {
-  padding: 40px 0;
+  padding-top: 70px;
   color: #000;
 }
 
@@ -533,6 +538,9 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 }
 #about-us .about-info {
 	background-color: #eee;
+	padding: 15px;
+}
+#about-us .our-skills {
 	padding: 15px;
 }
 
@@ -566,7 +574,7 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 *********Projects CSS*********
 **************************/
 #projects {
-  padding-top: 0;
+  padding-top: 65px;
 }
 
 .projects-members {
@@ -1089,7 +1097,7 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 **************************/
 
 #contact {
-  padding-top: 45px;
+  padding-top: 30px;
   padding-bottom: 0;
 }
 

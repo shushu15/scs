@@ -6,4 +6,4 @@
 Окончание работ по проектированию и монтажу слаботочных сетей и пожаротушения во втором этапе строительства жилого комплекса "Династия" (г.Москва)
 
 
-  [1]: http://scs.spb.ru/content/images/20190331032840-zk-dinastiay-moscow22.jpg
+  [1]: https://scs-spb.ru/content/images/20190331032840-zk-dinastiay-moscow22.jpg

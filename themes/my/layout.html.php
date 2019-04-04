@@ -210,42 +210,36 @@
                         <div class="page-heading">
                             <h1><?php echo $p->title;?></h1>
                             <hr class="small">
-                            <span class="subheading"><?php echo blog_title();?></span>
                         </div>
                     <?php endif;?>
                     <?php if (isset($is_profile)):?>
                         <div class="page-heading">
                             <h1><?php echo $name ?></h1>
                             <hr class="small">
-                            <span class="subheading"><?php echo blog_title();?></span>
                         </div>
                     <?php endif;?>
                     <?php if (isset($is_blog)):?>
                         <div class="page-heading">
                             <h1><?php echo i18n('Blog');?></h1>
                             <hr class="small">
-                            <span class="subheading"><?php echo blog_title();?></span>
                         </div>
                     <?php endif;?>
                     <?php if (isset($is_category)):?>
                         <div class="page-heading">
                             <h1><?php echo $category->title;?></h1>
                             <hr class="small">
-                            <span class="subheading"><?php echo blog_title();?></span>
                         </div>
                     <?php endif;?>
                     <?php if (isset($is_tag)):?>
                         <div class="site-heading">
                             <h1><?php echo $tag->title;?></h1>
                             <hr class="small">
-                            <span class="subheading"><?php echo blog_title();?></span>
                         </div>
                     <?php endif;?>
                     <?php if (isset($is_archive)):?>
                         <div class="site-heading">
                             <h1><?php echo $archive->title;?></h1>
                             <hr class="small">
-                            <span class="subheading"><?php echo blog_title();?></span>
                         </div>
                     <?php endif;?>
                     <?php if (isset($is_search)):?>

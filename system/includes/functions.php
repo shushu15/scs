@@ -36,6 +36,22 @@ function get_post_sorted()
     return $_sorted;
 }
 
+// SHU
+// Get blog post with more info about the path. Sorted by time in filename.
+// Sort order : time.hour == 23 - on time only, other hours = as post_sorted
+function get_post_timesorted($category)
+{
+    static $_timesorted = array();
+
+    if (empty($_timesorted)) {
+        $url = 'cache/index/' . $category . '-time.txt';
+        if (!file_exists($url)) {
+            rebuilt_cache('all');
+        }
+        $_timesorted = unserialize(file_get_contents($url));
+    }
+    return $_timesorted;
+}
 // Get static page path. Unsorted.
 function get_static_pages()
 {
@@ -167,8 +183,23 @@ function sortdate($a, $b)
     return $a->date == $b->date ? 0 : ($a->date < $b->date) ? 1 : -1;
 }
 
+// usort function. Sort by filename time.
+// Hack: If time hours === 23 sort by time only, else sort by full filename
+function sortfiletime($a, $b)
+{
+	$astring = substr($a['basename'], 11, 8);
+	$bstring = substr($b['basename'], 11, 8);
+	
+    //return $a['basename'] == $b['basename'] ? 0 : ($a['basename'] < $b['basename']) ? 1 : -1;
+	if (substr($astring, 0,2)=='23' || (substr($bstring, 0,2)=='23')) {
+		return ($astring == $bstring) ? 0 : ($astring < $bstring) ? 1 : -1;
+	} 
+	return sortfile($a, $b);
+}
+
 // Rebuilt cache index
-function rebuilt_cache($type)
+// shu - added $type == 'time' to sort on time only and for selected category
+function rebuilt_cache($type, $category = null)
 {
     $dir = 'cache/index';
     $posts_cache_sorted = array();
@@ -206,6 +237,21 @@ function rebuilt_cache($type)
         usort($posts_cache_sorted, "sortfile");
         $string = serialize($posts_cache_sorted);
         file_put_contents('cache/index/index-sorted.txt', print_r($string, true));
+	} elseif ($type === 'time' && !empty($category)) {
+		$category = trim($category);
+        $tmpt = array();
+        $tmpt = glob('content/*/blog/' . $category . '/*/*.md', GLOB_NOSORT);
+
+        if (is_array($tmpt)) {
+            foreach ($tmpt as $file) {
+                if(strpos($file, '/draft/') === false) {
+                    $posts_time_cache_sorted[] = pathinfo($file);
+                }
+            }
+        }
+        usort($posts_time_cache_sorted, "sortfiletime");
+        $string = serialize($posts_time_cache_sorted);
+        file_put_contents('cache/index/' . $category . '-time.txt', print_r($string, true));
     } elseif ($type === 'page') {
         $page_cache = glob('content/static/*.md', GLOB_NOSORT);
         $string = serialize($page_cache);
@@ -228,6 +274,7 @@ function rebuilt_cache($type)
         rebuilt_cache('subpage');
         rebuilt_cache('author');
         rebuilt_cache('category');
+        rebuilt_cache('time', config('category.sort.time'));
     }
     
     foreach (glob('cache/widget/*.cache', GLOB_NOSORT) as $file) {
@@ -465,7 +512,13 @@ function find_draft($year, $month, $name)
 // Return category page.
 function get_category($category, $page, $perpage)
 {
-    $posts = get_post_sorted();
+	$timecat = config('category.sort.time');
+	//if (!empty($timecat) && ($category == config('category.sort.time'))) {
+	//	$posts = get_post_timesorted($category);
+	//} else {
+	//	$posts = get_post_sorted();
+	//}
+     $posts = (!empty($timecat) && ($category == $timecat)) ?  get_post_timesorted($category) : get_post_sorted();
 
     $tmp = array();
     
@@ -1209,7 +1262,7 @@ function featured_posts_tag( $tag, $custom = null, $count = null)
     $tmp = array();
     $posts = array();
     
-	error_log("filename:" . $filename, 0);
+	// error_log("***filename:" . $filename, 0);
     if (is_dir($dir) === false) {
         mkdir($dir, 0775, true);
     }
@@ -1256,7 +1309,7 @@ function featured_posts_category( $category, $custom = null, $count = null)
     $tmp = array();
     $posts = array();
     
-	error_log("filename:" . $filename, 0);
+	// error_log("*****filename:" . $filename, 0);
     if (is_dir($dir) === false) {
         mkdir($dir, 0775, true);
     }

@@ -275,9 +275,6 @@
 					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="800ms">
 						<a href="/water"><h3 class="lead"><i class="fas fa-temperature-high fa-lg"></i> Системы отопления и водоснабжения.</h3></a>
 					</div>
-					<div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">
-						<a href="/elboxes"><h3 class="lead"><i class="fas fa-plug fa-lg"></i> Производство электрощитового оборудования.</h3></a>
-					</div>
 				</div>
 				</div>
 			</div> <!-- row - about -->

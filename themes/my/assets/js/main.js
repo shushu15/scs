@@ -59,7 +59,7 @@
 // smooth moving inside one-page . Please note, that real href is not executed, so 
 // TODO: execute the href is needed (example - 'purchase'
 	$('.navbar-collapse ul .scroll a').on('click', function() {  
-		$('html, body').animate({scrollTop: $(this.hash).offset().top }, 1000);
+		$('html, body').animate({scrollTop: $(this.hash).offset().top}, 1000);
 		Scroll();		// force redrawing
 		return false;
 	});
@@ -88,7 +88,7 @@
 	};
 
 	$('#tohash').on('click', function(){
-		$('html, body').animate({scrollTop: $(this.hash).offset().top }, 1000);
+		$('html, body').animate({scrollTop: $(this.hash).offset().top}, 1000);
 		Scroll();		// force redrawing
 		return false;
 	});

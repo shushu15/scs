@@ -187,80 +187,16 @@
     </div><!--/#main-nav-->
   </header> <!--/#home-->
   
-    
+  
 	
     <!-- Set your background image for this header on the line below. -->
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <?php if (isset($is_front)):?>
-                        <div class="site-heading">
-                            <h1><?php echo blog_title();?></h1>
-                            <hr class="small">
-                            <span class="subheading"><?php echo blog_tagline();?></span>
-                        </div>
-                    <?php endif;?>
                     <?php if (isset($is_post)):?>
                         <div class="post-heading">
                             <h1><?php echo $p->title;?></h1>
-                            <span class="meta"><?php echo i18n('Published_in');?> <?php echo $p->category;?> <?php echo i18n('Author');?> <a href="<?php echo $p->authorUrl;?>"><?php echo $p->author;?></a> on <?php echo strftime(config("date_format"), $p->date); ?></span>
-                        </div>
-                    <?php endif;?>
-                    <?php if (isset($is_page) || isset($is_subpage)):?>
-                        <div class="page-heading">
-                            <h1><?php echo $p->title;?></h1>
-                            <hr class="small">
-                        </div>
-                    <?php endif;?>
-                    <?php if (isset($is_profile)):?>
-                        <div class="page-heading">
-                            <h1><?php echo $name ?></h1>
-                            <hr class="small">
-                        </div>
-                    <?php endif;?>
-                    <?php if (isset($is_blog)):?>
-                        <div class="page-heading">
-                            <h1><?php echo i18n('Blog');?></h1>
-                            <hr class="small">
-                        </div>
-                    <?php endif;?>
-                    <?php if (isset($is_category)):?>
-                        <div class="page-heading">
-                            <h1><?php echo $category->title;?></h1>
-                            <hr class="small">
-                        </div>
-                    <?php endif;?>
-                    <?php if (isset($is_tag)):?>
-                        <div class="site-heading">
-                            <h1><?php echo $tag->title;?></h1>
-                            <hr class="small">
-                        </div>
-                    <?php endif;?>
-                    <?php if (isset($is_archive)):?>
-                        <div class="site-heading">
-                            <h1><?php echo $archive->title;?></h1>
-                            <hr class="small">
-                        </div>
-                    <?php endif;?>
-                    <?php if (isset($is_search)):?>
-                        <div class="site-heading">
-                            <h1><?php echo $search->title;?></h1>
-                            <hr class="small">
-                            <span class="subheading"><?php echo blog_title();?></span>
-                        </div>
-                    <?php endif;?>
-                    <?php if (isset($is_404)):?>
-                        <div class="site-heading">
-                            <h1>Error 404!</h1>
-                            <hr class="small">
-                            <span class="subheading"><?php echo blog_tagline();?></span>
-                        </div>
-                    <?php endif;?>
-                    <?php if (isset($is_404search)):?>
-                        <div class="site-heading">
-                            <h1>Поиск по ключевым словам. Ничего не найдено!</h1>
-                            <hr class="small">
-                            <span class="subheading"><?php echo blog_tagline();?></span>
+                            <span class="meta"><?php echo i18n('Published_in');?> <?php echo $p->category;?> <?php echo i18n('Author');?> <a href="<?php echo $p->authorUrl;?>"><?php echo $p->author;?></a></span>
                         </div>
                     <?php endif;?>
                     <?php if (!empty($breadcrumb)): ?>
@@ -270,56 +206,10 @@
             </div>
         </div>
 	
-       <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-xs-12">
- 
-					<section id="content"> 	
-						<?php echo content();?>
-						<hr>
-					</section> 
-				</div>
 
-                <div class="col-sm-4 col-xs-12">
-					
-					<section id="sidebar">
-	   
-						<?php echo search() ?> 
-
-						<div class="recent">
-							<h3><?php echo i18n('Recent_posts');?></h3>
-							<?php echo recent_posts() ?>
-						</div>
-						<?php if(config('views.counter') === 'true') :?>
-						<div class="popular">
-							<h3><?php echo i18n('Popular_posts');?></h3>
-							<?php echo popular_posts() ?>
-						</div>
-						<?php endif;?>
-						<div class="archive">
-							<h3><?php echo i18n('Archive');?></h3>
-							<?php echo archive_list() ?>
-						</div>
-						<?php if (disqus()): ?>
-						<div class="comments">
-							<h3><?php echo i18n('Comments');?></h3>                    
-							<?php echo recent_comments() ?>
-							<style>li.dsq-widget-item {border-bottom: 1px solid #ebebeb;margin:0;margin-bottom:10px;padding:0;padding-bottom:10px;}a.dsq-widget-user {font-weight:normal;}img.dsq-widget-avatar {margin-right:10px; }.dsq-widget-comment {display:block;padding-top:5px;}.dsq-widget-comment p {display:block;margin:0;}p.dsq-widget-meta {padding-top:5px;margin:0;}#dsq-combo-widget.grey #dsq-combo-content .dsq-combo-box {background: transparent;}#dsq-combo-widget.grey #dsq-combo-tabs li {background: none repeat scroll 0 0 #DDDDDD;}</style>
-						</div>
-						<?php endif; ?>
-						<div class="category-list">
-							<h3><?php echo i18n('Category');?></h3>
-							<?php echo category_list() ?>
-						</div>
-						<div class="tagcloud">
-							<h3><?php echo i18n('Tags');?></h3>
-						<?php echo tag_cloud() ?>
-						</div>
-					</section> 
-				</div>
-			</div>
-			
-		</div> <!-- containet -->
+	
+    <?php echo content();?>
+    <hr>
 	
 	
 	
