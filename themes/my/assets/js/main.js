@@ -86,12 +86,13 @@
 			}
 		})
 	};
-
+/** removed - implemented thru [data-scroll] smoothscroll
 	$('#tohash').on('click', function(){
 		$('html, body').animate({scrollTop: $(this.hash).offset().top}, 1000);
 		Scroll();		// force redrawing
 		return false;
 	});
+	**/
 	
 	//Initiat WOW JS
 	new WOW().init();
