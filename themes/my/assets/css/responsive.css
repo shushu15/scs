@@ -9,6 +9,10 @@
 		top: 30%;
 		margin-top:  -50px;
 	}
+	#home-slider .caption h1,  #home-slider .caption h2 {
+		font-size: 42px;
+	}
+
 
 }
 
@@ -51,6 +55,13 @@
 		margin-top:  -40px;
 		
 	}
+	#home-slider .caption h1,  #home-slider .caption h2 {
+		font-size: 36px;
+	}
+	#home-slider .caption h3 {
+		font-size: 28px;
+	}
+		
 	.header_top .top-social-icons{
 		display:none;
 	}
@@ -286,7 +297,7 @@
 		float: none;
 	}
 	#home-slider .caption {
-		top: 10%;
+		top: 25%;
 		
 	}
 	

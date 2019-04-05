@@ -46,14 +46,19 @@ strong  {
 
 .btn.btn-primary:hover,
 .btn-submit:hover, 
-.navbar-right  > li > a:hover ,
-.dropdown-menu  > li > a:hover ,
-.our-services .col-sm-6:hover .service-icon ,
+..our-services .col-sm-6:hover .service-icon ,
 .pager li > a:hover,
 .pager li > a:focus
 {
   background-color: #3D80A4;
 }
+.navbar-right  > li > a:hover ,
+.dropdown-menu  > li > a:hover
+{
+  color: #fff;
+  background-color: #3D80A4;
+}
+
 a:hover, a:focus,  
 .post-preview > a:hover,
 .post-preview > a:focus ,

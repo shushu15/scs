@@ -77,7 +77,7 @@
 		  </div>
           <div class="caption">
             <h1 class="animated bounceIn" data-animation-wipe="animated bounceOut">Инженерные системы</h1>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/#about-us" data-animation-wipe="btn btn-start animated fadeOut">посмотреть</a>
+            <a class="btn btn-start animated fadeInUpBig" href="/#about-us" data-animation-wipe="btn btn-start animated fadeOut">посмотреть</a>
           </div>
         </div>
         <div class="item slide2">
@@ -86,7 +86,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceIn" data-animation-wipe="animated bounceOut">Электроснабжение</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/electro" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a class="btn btn-start animated fadeInUpBig" href="/electro" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide3">
@@ -95,7 +95,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceIn" data-animation-wipe="animated bounceOut">Системы безопасности</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/security" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a  class="btn btn-start animated fadeInUpBig" href="/security" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide4" >
@@ -104,7 +104,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceInDown" data-animation-wipe="animated bounceOutDown">Системы противопожарной защиты</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/fireguard" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a  class="btn btn-start animated fadeInUpBig" href="/fireguard" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide5" >
@@ -113,7 +113,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated bounceInDown" data-animation-wipe="animated bounceOutDown">Телекоммуникации</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/telecommunication" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a class="btn btn-start animated fadeInUpBig" href="/telecommunication" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide6" >
@@ -122,7 +122,7 @@
 		  </div>
           <div class="caption">
             <h2 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Автоматика и диспетчеризация</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/automatics" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a  class="btn btn-start animated fadeInUpBig" href="/automatics" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
         <div class="item slide7" >
@@ -131,14 +131,14 @@
 		  </div>
           <div class="caption">
             <h2 class="animated fadeInLeftBig" data-animation-wipe="animated fadeOutLeftBig">Системы отопления и водоснабжения</span></h2>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="/water" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
+            <a class="btn btn-start animated fadeInUpBig" href="/water" data-animation-wipe="btn btn-start animated fadeOut">подробнее</a>
           </div>
         </div>
       </div>
       <a class="left-control" href="#home-slider" data-slide="prev"><i class="fas fa-angle-left"></i></a>
       <a class="right-control" href="#home-slider" data-slide="next"><i class="fas fa-angle-right"></i></a>
 
-      <a id="tohash" href="#services"><i class="fas fa-angle-down"></i></a>
+      <a data-scroll href="#page-content" ><i class="fas fa-angle-down"></i></a>
 
     </div><!--/#home-slider-->
 	
