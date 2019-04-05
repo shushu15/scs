@@ -166,9 +166,23 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li class="active"><a href="/#home"><i class="fas fa-home fa-lg"></i></a></li>
+            <li><a href="/#home"><i class="fas fa-home fa-lg"></i></a></li>
             <li><a href="/#about-us">О нас </a></li> 
-            <li><a href="/category/ppoekty">Проекты</a></li>
+			<?php $cattag = config('category.tags');  ?> 
+			<?php if (empty($cattag)) :?>
+				<li><a href="/category/ppoekty">Проекты</a></li>
+			<?php else: ?>	
+				<li class="dropdown active">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Проекты <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/category/ppoekty">Все проекты</a></li>
+						<li><a href="/category/ppoekty/tag/promyshlennost"><?php echo i18n('Category_tag_promyshlennost');?></a></li>
+						<li><a href="/category/ppoekty/tag/kommercheskie"><?php echo i18n('Category_tag_kommercheskie');?></a></li>
+						<li><a href="/category/ppoekty/tag/goszakaz"><?php echo i18n('Category_tag_goszakaz');?></a></li>
+						<li><a href="/category/ppoekty/tag/zhilstroj"><?php echo i18n('Category_tag_zhilstroj');?></a></li>
+					</ul>
+				</li>			
+			<?php endif; ?>
             <li><a href="/#contact">Контакты</a></li> 
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v fa-lg"></i></a>

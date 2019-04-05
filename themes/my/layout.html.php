@@ -165,13 +165,37 @@
 		  
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">                 
-            <li class="active"><a href="/#home"><i class="fas fa-home fa-lg"></i></a></li>
-            <li><a href="/#about-us">О нас </a></li> 
-            <li><a href="/category/ppoekty">Проекты</a></li>
+          <ul class="nav navbar-nav navbar-right">   
+			<?php if (isset($categoryorig) && ($categoryorig == 'ppoekty')) :?> 		  
+				<li>
+			<?php else :?>
+				<li class="active">
+			<?php endif; ?>
+			<a href="/#home"><i class="fas fa-home fa-lg"></i></a></li>
+            <li><a href="/#about-us">О нас </a></li>
+			<?php $cattag = config('category.tags');  ?> 
+			<?php if (empty($cattag)) :?>
+				<li><a href="/category/ppoekty">Проекты</a></li>
+			<?php else: ?>	
+				<?php
+				if (isset($categoryorig) && ($categoryorig == 'ppoekty')) {	  
+					echo '<li class="dropdown active">';
+				} else {
+					echo '<li class="dropdown">';
+				};
+				?>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Проекты <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/category/ppoekty">Все проекты</a></li>
+						<li><a href="/category/ppoekty/tag/promyshlennost"><?php echo i18n('Category_tag_promyshlennost');?></a></li>
+						<li><a href="/category/ppoekty/tag/kommercheskie"><?php echo i18n('Category_tag_kommercheskie');?></a></li>
+						<li><a href="/category/ppoekty/tag/goszakaz"><?php echo i18n('Category_tag_goszakaz');?></a></li>
+						<li><a href="/category/ppoekty/tag/zhilstroj"><?php echo i18n('Category_tag_zhilstroj');?></a></li>
+					</ul>
+				</li>			
+			<?php endif; ?>
             <li><a href="/#contact">Контакты</a></li> 
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v fa-lg"></i></a>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v fa-lg"></i></a>
 				<ul class="dropdown-menu">
 					<li><a href="/category/novosti">Новости</a></li>
 					<li><a href="/licenses">Лицензии</a></li>
@@ -227,6 +251,20 @@
                     <?php if (isset($is_category)):?>
                         <div class="page-heading">
                             <h1><?php echo $category->title;?></h1>
+							<?php if (isset($tag)):?>
+								<h2>
+								<?php 
+								if ($tag == 'promyshlennost') {
+									echo i18n('Category_tag_promyshlennost');
+								} elseif ($tag == 'kommercheskie') {
+									echo i18n('Category_tag_kommercheskie');
+								} elseif ($tag == 'goszakaz') {
+									echo i18n('Category_tag_goszakaz');
+								} elseif ($tag == 'zhilstroj') {
+									echo i18n('Category_tag_zhilstroj');
+								};  ?>
+								</h2>
+							<?php endif;?>
                             <hr class="small">
                         </div>
                     <?php endif;?>

@@ -554,6 +554,62 @@ function get_category($category, $page, $perpage)
     return $tmp = get_posts($tmp, $page, $perpage);
 }
 
+// SHU
+// Return category-tag page.
+function get_category_tag($category, $tag, $page, $perpage)
+{
+	$timecat = config('category.sort.time');
+	//if (!empty($timecat) && ($category == config('category.sort.time'))) {
+	//	$posts = get_post_timesorted($category);
+	//} else {
+	//	$posts = get_post_sorted();
+	//}
+     $posts = (!empty($timecat) && ($category == $timecat)) ?  get_post_timesorted($category) : get_post_sorted();
+
+    $tmp = array();
+    
+    if (empty($perpage)) {
+        $perpage = 10;    
+    }
+
+    foreach ($posts as $index => $v) {
+    
+        $filepath = $v['dirname'] . '/' . $v['basename'];
+
+        // Extract the date
+        $arr = explode('_', $filepath);
+
+        // Replaced string
+        $replaced = substr($arr[0], 0, strrpos($arr[0], '/')) . '/';
+
+        // Author string
+        $str = explode('/', $replaced);
+        $cat = $str[count($str) - 3];
+    
+        if (strtolower($category) === strtolower($cat)) {
+			// check for tag
+			$arr2 = explode('_', $v['basename']);
+			$mtag = explode(',', rtrim($arr2[1], ','));
+			foreach ($mtag as $t) {
+				if (strtolower($t) === strtolower($tag)) {
+					$tmp[] = $v;
+					break;
+				}
+			}
+        }
+    }
+
+    if (empty($tmp)) {
+        not_found();
+    }
+    
+    $tmp = array_unique($tmp, SORT_REGULAR);
+
+    return $tmp = get_posts($tmp, $page, $perpage);
+}
+
+
+
 // Return category info.
 function get_category_info($category)
 {
@@ -1090,6 +1146,27 @@ function get_categorycount($var)
         $cat = '/blog/' . $str[count($str) - 3];
         if (stripos($cat, "$var") !== false) {
             $tmp[] = $v;
+        }
+    }
+
+    return count($tmp);
+}
+
+// SHU
+// Return category-tag count. Matching $var and $str provided.
+function get_categorytagcount($cat, $tag)
+{
+    $posts = get_post_timesorted($cat);  // here we have all posts for $cat
+
+    $tmp = array();
+
+    foreach ($posts as $index => $v) {
+        $arr = explode('_', $v['basename']);
+        $mtag = explode(',', rtrim($arr[1], ','));
+        foreach ($mtag as $t) {
+            if (strtolower($t) === strtolower($tag)) {
+                $tmp[] = $v;
+            }
         }
     }
 

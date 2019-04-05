@@ -24,10 +24,11 @@ strong  {
 		border-color: #5e9ab2;
 }
 
-.main-nav, .navbar-right li.active a,
+.main-nav, .navbar-right > li.active a, .navbar-right > li.open a,
 #about-us  .lead:hover {
 		border-color: #F7551D;
 }
+
 #about-us  .lead:hover i {
 	color: #F7551D;
 }

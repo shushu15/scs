@@ -1416,6 +1416,83 @@ get('/admin/categories', function () {
     die;
 });
 
+// SHU - for Project and pseudo sub-category
+// Show the category - tag page
+get('/category/:category/tag/:tag', function ($category, $tag) {
+
+    if (isset($_GET['search'])) {
+        $search = $_GET['search'];
+        $url = site_url() . 'search/' . remove_accent($search);
+        header("Location: $url");
+    }
+
+    if (!login()) {
+        file_cache($_SERVER['REQUEST_URI']);
+    }
+
+    $page = from($_GET, 'page');
+    $page = $page ? (int)$page : 1;
+    $perpage = config('category.perpage');
+    
+    if (empty($perpage)) {
+        $perpage = 10;    
+    }
+
+    $posts = get_category_tag($category, $tag, $page, $perpage);
+    
+    $desc = get_category_info($category);
+    
+    if(strtolower($category) !== 'uncategorized') {
+       $desc = $desc[0];
+    }
+
+    $total = get_categorytagcount($category, $tag);
+
+    if (empty($posts) || $page < 1) {
+        // a non-existing page
+        not_found();
+    }
+    // error_log ("***** tag = " . $tag );
+	
+    $vroot = rtrim(config('views.root'), '/');
+    
+    $lt = $vroot . '/layout--category--'. strtolower($category) .'.html.php'; 
+    $ls = $vroot . '/layout--category.html.php'; 
+    if (file_exists($lt)) {
+        $layout = 'layout--category--' . strtolower($category);
+    } else if (file_exists($ls)) {
+        $layout = 'layout--category';
+    } else {
+        $layout = '';
+    }
+    
+    $pv = $vroot . '/main--category--'. strtolower($category) .'.html.php';
+    $ps = $vroot . '/main--category.html.php'; 
+    if (file_exists($pv)) {
+        $pview = 'main--category--' . strtolower($category);
+    } else if (file_exists($ps)) {
+        $pview = 'main--category';
+    } else {
+        $pview = 'main';
+    }
+    
+    render($pview, array(
+        'title' => $desc->title . ' - ' . blog_title(),
+        'description' => $desc->description,
+        'canonical' => $desc->url,
+        'page' => $page,
+        'posts' => $posts,
+        'category' => $desc,
+        'categoryorig' => strtolower($category),
+		'tag' => strtolower($tag),
+        'bodyclass' => 'in-category category-' . strtolower($category),
+        'breadcrumb' => '<a href="' . site_url() . '">' . config('breadcrumb.home') . '</a> &#187; ' . $desc->title,
+        'pagination' => has_pagination($total, $perpage, $page),
+        'is_category' => true,
+    ), $layout);
+});
+
+
 // Show the category page
 get('/category/:category', function ($category) {
 
@@ -1481,6 +1558,7 @@ get('/category/:category', function ($category) {
         'page' => $page,
         'posts' => $posts,
         'category' => $desc,
+        'categoryorig' => strtolower($category),
         'bodyclass' => 'in-category category-' . strtolower($category),
         'breadcrumb' => '<a href="' . site_url() . '">' . config('breadcrumb.home') . '</a> &#187; ' . $desc->title,
         'pagination' => has_pagination($total, $perpage, $page),
