@@ -24,9 +24,13 @@ strong  {
 		border-color: #5e9ab2;
 }
 
-.main-nav, .navbar-right > li.active a, .navbar-right > li.open a,
+.main-nav, .navbar-right > li.active > a, .navbar-right > li.open > a,
 #about-us  .lead:hover {
 		border-color: #F7551D;
+}
+
+.dropdown-menu > li.active > a, .dropdown-menu > li.open > a{
+		border-color: #5e9ab2;
 }
 
 #about-us  .lead:hover i {

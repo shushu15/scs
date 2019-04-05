@@ -432,9 +432,10 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 
 .navbar-right li.active a {
   background-color: rgba(0,0,0,.2);
+}
+.navbar-right > li.active > a {
   border-bottom: 5px solid;
 }
-
 .navbar-brand {
   margin-top: 0px;
   padding-top: 10px;
@@ -622,10 +623,6 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
   color: #fff;
 }
 
-.navbar-right li.active a {
-  background-color: rgba(0,0,0,.2);
-  border-bottom: 5px solid;
-}
 
 #projects .member-info h4 {
   font-size: 14px;
