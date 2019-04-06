@@ -430,7 +430,7 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
   padding-bottom: 30px;
 }
 
-.navbar-right li.active a {
+.navbar-right > li.active > a {
   background-color: rgba(0,0,0,.2);
 }
 .navbar-right > li.active > a {
