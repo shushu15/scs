@@ -989,6 +989,9 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 .post-thumb {
   position: relative;
 }
+.post-thumb .img-responsive {
+  width: 100%;
+}
 
 .post-icon {
   position: absolute;
