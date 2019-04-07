@@ -421,6 +421,7 @@ function get_posts($posts, $page = 1, $perpage = 0)
     return $tmp;
 }
 
+// SHU - fix error for posts with the same name but different dates
 // Find post by year, month and name, previous, and next.
 function find_post($year, $month, $name)
 {
@@ -428,85 +429,92 @@ function find_post($year, $month, $name)
 
     foreach ($posts as $index => $v) {
         $arr = explode('_', $v['basename']);
-        if (strpos($arr[0], "$year-$month") !== false && strtolower($arr[2]) === strtolower($name . '.md') || strtolower($arr[2]) === strtolower($name . '.md')) {
+		// SHU - cannot reach the second post with the same name
+        //if (strpos($arr[0], "$year-$month") !== false && strtolower($arr[2]) === strtolower($name . '.md') || strtolower($arr[2]) === strtolower($name . '.md')) {
+		// search exactly
+        if (strpos($arr[0], "$year-$month") !== false && strtolower($arr[2]) === strtolower($name . '.md') ) {
 
-            // Use the get_posts method to return
-            // a properly parsed object
+			return find_post_internal ($posts, $index);
+		}
+    }
+	// not found - search for wide posts - only on name 
+    foreach ($posts as $index => $v) {
+        $arr = explode('_', $v['basename']);
+		// SHU - cannot reach the second post with the same name
+        //if (strpos($arr[0], "$year-$month") !== false && strtolower($arr[2]) === strtolower($name . '.md') || strtolower($arr[2]) === strtolower($name . '.md')) {
+		// search exactly
+        if (strtolower($arr[2]) === strtolower($name . '.md') ) {
 
-            $ar = get_posts($posts, $index + 1, 1);
-            $nx = get_posts($posts, $index, 1);
-            $pr = get_posts($posts, $index + 2, 1);
-
-            if ($index == 0) {
-                if (isset($pr[0])) {
-                    return array(
-                        'current' => $ar[0],
-                        'prev' => $pr[0]
-                    );
-                } else {
-                    return array(
-                        'current' => $ar[0],
-                        'prev' => null
-                    );
-                }
-            } elseif (count($posts) == $index + 1) {
-                return array(
-                    'current' => $ar[0],
-                    'next' => $nx[0]
-                );
-            } else {
-                return array(
-                    'current' => $ar[0],
-                    'next' => $nx[0],
-                    'prev' => $pr[0]
-                );
-            }
-        }
+			return find_post_internal ($posts, $index);
+		}
     }
 }
 
+// SHU internal finction for find_post find_draft
+function find_post_internal ($posts, $index) {
+
+    // Use the get_posts method to return
+    // a properly parsed object
+
+    $ar = get_posts($posts, $index + 1, 1);
+    $nx = get_posts($posts, $index, 1);
+    $pr = get_posts($posts, $index + 2, 1);
+
+    if ($index == 0) {
+        if (isset($pr[0])) {
+            return array(
+                'current' => $ar[0],
+                'prev' => $pr[0]
+            );
+        } else {
+            return array(
+				'current' => $ar[0],
+                'prev' => null
+            );
+        }
+    } elseif (count($posts) == $index + 1) {
+        return array(
+            'current' => $ar[0],
+            'next' => $nx[0]
+        );
+    } else {
+        return array(
+            'current' => $ar[0],
+            'next' => $nx[0],
+            'prev' => $pr[0]
+        );
+    }
+	
+}
+
 // Find draft.
+// SHU - cannot reach the second post with the same name
 function find_draft($year, $month, $name)
 {
     $posts = get_draft_posts();
 
     foreach ($posts as $index => $v) {
         $arr = explode('_', $v['basename']);
-        if (strpos($arr[0], "$year-$month") !== false && strtolower($arr[2]) === strtolower($name . '.md') || strtolower($arr[2]) === strtolower($name . '.md')) {
+		// SHU - cannot reach the second post with the same name
+        //if (strpos($arr[0], "$year-$month") !== false && strtolower($arr[2]) === strtolower($name . '.md') || strtolower($arr[2]) === strtolower($name . '.md')) {
+		// search exactly
+        if (strpos($arr[0], "$year-$month") !== false && strtolower($arr[2]) === strtolower($name . '.md') ) {
 
-            // Use the get_posts method to return
-            // a properly parsed object
-
-            $ar = get_posts($posts, $index + 1, 1);
-            $nx = get_posts($posts, $index, 1);
-            $pr = get_posts($posts, $index + 2, 1);
-
-            if ($index == 0) {
-                if (isset($pr[0])) {
-                    return array(
-                        'current' => $ar[0],
-                        'prev' => $pr[0]
-                    );
-                } else {
-                    return array(
-                        'current' => $ar[0],
-                        'prev' => null
-                    );
-                }
-            } elseif (count($posts) == $index + 1) {
-                return array(
-                    'current' => $ar[0],
-                    'next' => $nx[0]
-                );
-            } else {
-                return array(
-                    'current' => $ar[0],
-                    'next' => $nx[0],
-                    'prev' => $pr[0]
-                );
-            }
-        }
+			return find_post_internal ($posts, $index);
+		}
     }
+	// not found - search for wide posts - only on name 
+    foreach ($posts as $index => $v) {
+        $arr = explode('_', $v['basename']);
+		// SHU - cannot reach the second post with the same name
+        //if (strpos($arr[0], "$year-$month") !== false && strtolower($arr[2]) === strtolower($name . '.md') || strtolower($arr[2]) === strtolower($name . '.md')) {
+		// search exactly
+        if (strtolower($arr[2]) === strtolower($name . '.md') ) {
+
+			return find_post_internal ($posts, $index);
+		}
+    }
+	
 }
 
 // Return category page.
