@@ -76,7 +76,7 @@
           <div class="picture">
 		  </div>
           <div class="caption">
-            <h1 class="animated bounceIn" data-animation-wipe="animated bounceOut">Инженерные системы</h1>
+            <h2 class="animated bounceIn" data-animation-wipe="animated bounceOut">Инженерные системы</h2>
             <a class="btn btn-start animated fadeInUpBig" href="/#about-us" data-animation-wipe="btn btn-start animated fadeOut">посмотреть</a>
           </div>
         </div>
