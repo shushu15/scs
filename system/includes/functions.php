@@ -1943,6 +1943,16 @@ function get_teaser($string, $url = null, $char = null)
     }
 }
 
+function is_teaser_shorten($string, $char = null) {
+    if(empty($char)) {
+        $char = config('teaser.char');
+        if(empty($char)) {
+            $char = 200;
+        }        
+    }
+	return is_shorten($string, $char);
+}
+
 // Get thumbnail from image and Youtube.
 function get_thumbnail($text, $url = null)
 {
@@ -3225,6 +3235,16 @@ function shorten($string = null, $char = null)
         return $string;
     }
     
+}
+
+// SHU
+function is_shorten($string = null, $char = null) {
+    if(empty($char) || empty($string)) {
+        return;
+    }
+    $string = preg_replace('/\s\s+/', ' ', strip_tags($string));
+    $string = ltrim(rtrim($string));
+	return (strlen($string) >= $char);
 }
 
 // save the i18n tag

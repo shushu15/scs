@@ -174,7 +174,6 @@
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v fa-lg"></i></a>
 				<ul class="dropdown-menu">
 					<li><a href="/category/novosti">Новости</a></li>
-					<li><a href="/licenses">Лицензии</a></li>
 					<li><a href="/review">Отзывы</a></li>
 					<li><a href="/vacancy">Вакансии</a></li>
 					<li><a href="/blog">Блог</a></li>
@@ -218,7 +217,6 @@
 				<ul class="footer-menu">
                 <li><a href="/#contact">Контакты</a></li> 
                 <li><a href="/review">Отзывы</a></li> 
-                <li><a href="/licenses">Лицензии</a></li> 
                 <li><a href="/vacancy">Вакансии</a></li> 
                 </ul>
               </div>

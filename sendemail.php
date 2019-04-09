@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Message:\n$message\n"; 	
 
 // Build the email headers.
-    $email_headers = "From: $name <$from>\r\n";
+    $email_headers = "From: $name <info@scs.spb.ru>\r\n";
 
 //	error_log( "to:" . $to . " subject:" . $subject . " email_content:" . $email_content . " email_headers:" . $email_headers );
 

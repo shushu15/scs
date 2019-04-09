@@ -409,7 +409,7 @@ a.carousel-control.right { right: 0; background: none; border: 0;}
 #home-slider .fa-angle-down {
   position: absolute;
   left: 50%;
-  bottom: 50px;
+  bottom: 20px;
   color: #fff;
   display: inline-block;
   width: 24px;

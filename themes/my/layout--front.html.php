@@ -174,7 +174,6 @@
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v fa-lg"></i></a>
 				<ul class="dropdown-menu">
 					<li><a href="/category/novosti">Новости</a></li>
-					<li><a href="/licenses">Лицензии</a></li>
 					<li><a href="/review">Отзывы</a></li>
 					<li><a href="/vacancy">Вакансии</a></li>
 					<li><a href="/blog">Блог</a></li>
@@ -215,7 +214,7 @@
 							<span class="category">в <strong><?php echo $l->category;?></strong></span>
 						</div>
 						<div class="entry-content">
-							<p><?php echo shorten($l->body, 300); ?>...</p>
+							<p><?php echo shorten($l->body, 300); ?><?php if (is_shorten($l->body, 300)) { ?> ... <?php } ?></p>
 						</div>
 					</div>
 				<?php endforeach;?>
@@ -334,7 +333,7 @@
               <div class="member-info">
 				<h3><a href="<?php echo $l->url;?>"><?php echo shorten($l->title,120);?></a></h3>
 				<!-- <span class="date"><?php echo date('d M Y', $l->date);?></span> -->
-				<p><?php echo shorten($l->body, 300); ?>...</p>
+				<p><?php echo shorten($l->body, 300); ?> <?php if (is_shorten($l->body, 300)) { ?> ... <?php } ?></p>
               </div>
             </div>
           </div>
@@ -447,7 +446,6 @@
 				<ul class="footer-menu">
                 <li><a href="/#contact">Контакты</a></li> 
                 <li><a href="/review">Отзывы</a></li> 
-                <li><a href="/licenses">Лицензии</a></li> 
                 <li><a href="/vacancy">Вакансии</a></li> 
                 </ul>
               </div>

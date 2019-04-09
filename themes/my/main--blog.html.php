@@ -40,7 +40,7 @@
 				<p itemprop="articleBody">
 					<?php echo get_thumbnail($p->body) ?>
 					<?php echo get_teaser($p->body, $p->url) ?> 
-					<?php if (config('teaser.type') === 'trimmed'):?> <a href="<?php echo $p->url;?>"><?php echo i18n('More');?></a><?php endif;?>
+					<?php if ((config('teaser.type') === 'trimmed') && is_teaser_shorten($p->body)):?> <a href="<?php echo $p->url;?>"> ...<?php echo i18n('read_more');?> </a><?php endif;?>
 				</p> 
 				<hr>
 			</div> 	
