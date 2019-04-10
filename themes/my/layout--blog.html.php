@@ -340,6 +340,7 @@
                 <li><a href="/category/ppoekty">Проекты</a></li> 
                 <li><a href="/category/novosti">Новости</a></li> 
                 <li><a href="/blog">Блог</a></li> 
+                <li><a href="/feed/rss">RSS feed</a></li> 
                 </ul>
               </div>
 		  </div>
@@ -349,6 +350,7 @@
                 <li><a href="/#contact">Контакты</a></li> 
                 <li><a href="/review">Отзывы</a></li> 
                 <li><a href="/vacancy">Вакансии</a></li> 
+                <li><a href="/sitemap.xml">Карта сайта</a></li> 
                 </ul>
               </div>
 		  </div>
