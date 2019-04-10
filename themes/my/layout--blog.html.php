@@ -350,7 +350,6 @@
                 <li><a href="/#contact">Контакты</a></li> 
                 <li><a href="/review">Отзывы</a></li> 
                 <li><a href="/vacancy">Вакансии</a></li> 
-                <li><a href="/sitemap.xml">Карта сайта</a></li> 
                 </ul>
               </div>
 		  </div>
