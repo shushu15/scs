@@ -374,20 +374,20 @@
                 <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" name="name" class="form-control" placeholder="Имя" required="required">
+                      <input type="text" name="name" class="form-control" maxlength="200" placeholder="Имя" required="required">
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="email" name="email" class="form-control" placeholder="Email Адрес" required="required">
+                      <input type="email" name="email" class="form-control" maxlength="200" placeholder="Email Адрес" required="required">
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <input id="subject1" type="text" name="subject" class="form-control" placeholder="Тема" required="required">
+                  <input id="subject1" type="text" name="subject" class="form-control" maxlength="500" placeholder="Тема" required="required">
                 </div>
                 <div class="form-group">
-                  <textarea name="message" id="message1" class="form-control" rows="4" placeholder="Напишите сообщение" required="required"></textarea>
+                  <textarea name="message" id="message1" class="form-control" rows="4" maxlength="3000" placeholder="Напишите сообщение" required="required"></textarea>
                 </div>                        
                 <div class="form-group">
                   <button type="submit" class="btn btn-submit">Отправить</button>
